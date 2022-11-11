@@ -1,0 +1,37 @@
+.regis>:nth-child(1){
+    position: absolute;
+width: 740px;
+height: 48px;
+left: 376px;
+top: 131px;
+
+font-family: 'Glory', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 48px;
+text-transform: uppercase;
+
+color: #000000;
+}
+.regis>:nth-child(2){
+    position: absolute;
+    width: 1318px;
+    height: 70px;
+left: 100px;
+top: 313px;
+padding-top: 20px;
+padding-left: 39px;
+font-family: 'Glory', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 30px;
+background: #F6F6F6;
+
+
+letter-spacing: 0.03em;
+
+color: rgba(242, 78, 26, 0.8);
+
+}

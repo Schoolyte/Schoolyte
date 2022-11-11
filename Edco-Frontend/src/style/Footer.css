@@ -1,0 +1,88 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css');
+
+.footer{    
+    position: absolute;
+    top:6000px;
+}
+
+.box{
+    padding-top:15px;
+    background-image: linear-gradient(#817EB1,#ffff);
+    width: 1600px;
+    height:180px;
+    font-size:34px;
+    letter-spacing:4px;
+
+
+}
+
+.boxed{
+    padding-left:125px;
+  
+}
+
+.imgfooter{
+    padding-left:120px;
+   
+}
+
+.footer-body{
+    padding-top:44px;
+    padding-left:121px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.logo-img{
+     padding-bottom:24px;    
+}
+
+.footer-text{
+    position:absolute;
+    padding-left:50px;
+}
+
+.icon-map{
+    position:absolute;
+}
+
+.icon-copy{
+    position:absolute;
+    padding-top: 125px;
+}
+
+.icon-contact{
+    position:absolute;
+    padding-top: 50px;
+    padding-left:850px;
+}
+
+.icon-email{
+    position:absolute;
+    padding-top: 100px;
+    padding-left:850px;
+}
+
+.material-symbols-outlined{
+    
+    padding-left:50px;
+}
+.footer-text2{
+    position: absolute;
+    padding-top:128px;
+}
+
+
+.kontak{
+    padding-top: 0px;
+    padding-left:850px;
+}
+.kontak>:nth-child(1){
+   
+}
+.footer-col{
+    padding-left:45px;
+}

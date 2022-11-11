@@ -1,0 +1,59 @@
+.carousel{
+    position: absolute;
+    top: 1600px;
+    left: 120px;
+}
+.card-wrapper{
+    display: flex;
+}
+.card{
+    width: 300px;
+    height: 366px;
+    align-items: center;
+    margin-left:20px;
+    margin-right: 20px;
+    background-color: #7873cd27;
+    border-radius: 20px;
+}
+
+.mpls{
+   
+    width: 180px;
+    height: 132px;
+    left: 271px;
+    margin-top: 25px;
+    border-radius: 15px;
+
+}
+
+.text{
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.btn-12{
+    background:  #7773CD;
+    width: 138px;
+    height: 40px;
+    margin-left: 70px;
+    margin-bottom: 20px;
+
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: #FFFFFF;
+    border-radius: 20px;
+    border-color: #7773CD;
+}
+.btn-12:hover{
+    cursor: pointer;
+  background-color: #501dbd;
+}

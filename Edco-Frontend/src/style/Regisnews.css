@@ -1,0 +1,145 @@
+.page-tittle>:nth-child(1){
+    position: absolute;
+width: 400px;
+height: 48px;
+left: 559px;
+top: 132px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 48px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #000000;
+}
+.command>:nth-child(1){
+    position: absolute;
+    width: 1318px;
+    height: 77px;
+    left: 61px;
+    top: 289px;
+    padding-top: 20px;
+    padding-left: 39px;
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    background: #F6F6F6;
+    border-radius: 5px;
+    color: rgba(242, 78, 26, 0.8);
+}
+.form-label1{
+    position: absolute;
+width: 150px;
+height: 24px;
+left: 61px;
+top: 41px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.cat1{
+    position: absolute;
+width: 416px;
+height: 175px;
+left: 63px;
+top: 77px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.form-label2{
+    position: absolute;
+width: 155px;
+height: 24px;
+left: 699px;
+top: 41px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.cat2{
+    position: absolute;
+width: 416px;
+height: 612px;
+left: 699px;
+top: 77px;
+
+background: #FFFFFF;
+border-radius: 5px;
+}
+.form-label3{
+    position: absolute;
+width: 200px;
+height: 24px;
+left: 61px;
+top: 264px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+}
+.form-control-file{
+    position: absolute;
+width: 416px;
+height: 45px;
+left: 61px;
+top: 300px;
+padding: 10px;
+
+background: #FFFFFF;
+border-radius: 5px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+color: #000000;
+}
+.btn-deliver{
+    position: absolute;
+width: 130px;
+height: 44px;
+left: 655px;
+top: 1195px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+border: none;
+color: #FFFFFF;
+border-radius: 10px;
+background: #F24E1A;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+.btn-deliver:hover{
+    cursor: pointer;
+    background-color: #8d280a;
+}
