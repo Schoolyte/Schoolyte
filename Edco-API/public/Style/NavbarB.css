@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 .container-fluid{
     padding-top:33px;
     padding-bottom: 10px;
   }
 
+=======
+>>>>>>> 4f16c3eeafc6e3253407b084ea64b1c8b442c47b
 .Logo-img{
     position: absolute;
     width: 151px;
     height: 37px;
+<<<<<<< HEAD
     left: 93px;
     top: 63px;
 
@@ -21,6 +25,17 @@
     list-style: none;
     padding-left: 685px;
     padding-top: 33px;
+=======
+    left: 90px;
+
+}
+
+
+.menu-beranda{
+    list-style: none;
+    padding-left: 685px;
+
+>>>>>>> 4f16c3eeafc6e3253407b084ea64b1c8b442c47b
 
 }
 
@@ -28,10 +43,17 @@
 
     line-height: 18px;
     background-color: white;
+<<<<<<< HEAD
     margin: 0 auto;
     display: flex;
     justify-content: space;
     align-items: center;
+=======
+    display: flex;
+    justify-content: space;
+    align-items: center;
+
+>>>>>>> 4f16c3eeafc6e3253407b084ea64b1c8b442c47b
 }
 
 .menu-beranda>li, .menu>a{
@@ -46,8 +68,11 @@
     display: block;
     text-decoration: none;
     color: black ;
+<<<<<<< HEAD
     top:73px;
     left:928px;
+=======
+>>>>>>> 4f16c3eeafc6e3253407b084ea64b1c8b442c47b
     padding-left:25px;
     padding-right:25px;
 
@@ -68,6 +93,7 @@
     border-radius: 50px;
 
     font-family: 'Lato';
+<<<<<<< HEAD
 font-style: normal;
 font-weight: 800;
 font-size: 20px;
@@ -75,3 +101,18 @@ line-height: 24px;
 color:white;
 
 }
+=======
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color:white;
+
+}
+
+.btn-login:active{
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 2px 2px 4px 4px rgb(0,0,0);
+}
+>>>>>>> 4f16c3eeafc6e3253407b084ea64b1c8b442c47b
