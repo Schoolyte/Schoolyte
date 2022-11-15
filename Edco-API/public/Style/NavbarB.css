@@ -1,26 +1,16 @@
-.container-fluid{
-    padding-top:33px;
-    padding-bottom: 10px;
-  }
-
 .Logo-img{
     position: absolute;
     width: 151px;
     height: 37px;
-    left: 93px;
-    top: 63px;
+    left: 90px;
 
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
 .menu-beranda{
     list-style: none;
     padding-left: 685px;
-    padding-top: 33px;
+
 
 }
 
@@ -28,10 +18,10 @@
 
     line-height: 18px;
     background-color: white;
-    margin: 0 auto;
     display: flex;
     justify-content: space;
     align-items: center;
+
 }
 
 .menu-beranda>li, .menu>a{
@@ -46,8 +36,6 @@
     display: block;
     text-decoration: none;
     color: black ;
-    top:73px;
-    left:928px;
     padding-left:25px;
     padding-right:25px;
 
@@ -68,10 +56,16 @@
     border-radius: 50px;
 
     font-family: 'Lato';
-font-style: normal;
-font-weight: 800;
-font-size: 20px;
-line-height: 24px;
-color:white;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color:white;
 
+}
+
+.btn-login:active{
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 2px 2px 4px 4px rgb(0,0,0);
 }
