@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 
 <head>
     <link href="Style/NavbarB.css" rel="stylesheet">
@@ -23,4 +23,5 @@
         </div>
     </div>
 </nav>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php /**PATH C:\Users\Asus\OneDrive\Desktop\Schoolyte-main\Edco-API\resources\views/components/HeaderB.blade.php ENDPATH**/ ?>

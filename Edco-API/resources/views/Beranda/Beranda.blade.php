@@ -34,27 +34,27 @@
                     <span>Beragam fitur yang disediakan oleh Schoolyte untuk membantu <br/>
                         memberikan akses berbagai kemudahan dalam sekolahmu</span>
                     <div class="news"><a href="#">
-                        <img src="assets/berita.png" className="img-berita"/>
+                        <img src="assets/berita.png" class="img-berita"/>
                         <span class="text1">Berita <br/> Sekolah</span>
                         </a></div>
                     <div class="absen"><a href="#">
-                        <img src="assets/Todo List.png" className="img-list"/>
+                        <img src="assets/Todo List.png" class="img-list"/>
                         <span class="text2">Absensi</span>
                         </a></div>
                     <div class="jadwal-mapel"><a href="#">
-                        <img src="assets/Schedule.png" className="img-jadwal"/>
+                        <img src="assets/Schedule.png" class="img-jadwal"/>
                         <span class="text3">Jadwal <br/> Kelas</span>
                         </a></div>
                     <div class="sch-build"><a href="#">
-                        <img src="assets/School Building.png" className="img-sch"/>
+                        <img src="assets/School Building.png" class="img-sch"/>
                         <span class="text4">Peminjaman <br/> Fasilitas</span >
                         </a></div>
                     <div class="perpus"><a href="#">
-                        <img src="assets/Storytelling.png" className="img-perpus"/>
+                        <img src="assets/Storytelling.png" class="img-perpus"/>
                         <span class="text5">Perpustakaan</span>
                         </a></div>
                     <div class="penilaian"><a href="#">
-                        <img src="assets/List View.png" className="img-listview"/>
+                        <img src="assets/List View.png" class="img-listview"/>
                         <span class="text6">Penilaian Pembelajaran</span>
                         </a></div>
                     <div class="rapor"><a href="#">
@@ -108,7 +108,7 @@
                     </thead>
                     <tbody>
                         <tr>
-                        <th scope="row">Pendaftaran</th>
+                        <th scope="row" >Pendaftaran</th>
                         <td>6 Juni - 7 Juli 2022</td>
                         <td>6 Juni - 7 Juli 2022</td>
                         </tr>
