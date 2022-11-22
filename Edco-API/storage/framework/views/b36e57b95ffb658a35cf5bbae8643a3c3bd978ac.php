@@ -1,29 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Login Page - Schoolyte</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');">
-
-        <!-- Bootstrap -->
-        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');">
-
-        <!-- Main CSS-->
-        <link href="Style/Login.css" rel="stylesheet">
-
-            <body>
-                "Hello ini dashboard siswa"
-                <li><a class="nav-brd" href="{{ route('logout') }}">logout</a></li>
-            </body>
-</html>
-=======
-@include('components.HeaderB')
+<?php echo $__env->make('components.HeaderB', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +8,7 @@
     <link rel="stylesheet" href="Style/Body.css">
     <title>Dashboard</title>
 </head>
-@yield('content')
+<?php echo $__env->yieldContent('content'); ?>
 <body>
     <div class="intro">
         <div class="i-left">
@@ -187,5 +164,4 @@
         </div>
     </div>
 </body>
-</html>
->>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
+</html><?php /**PATH C:\Users\Asus\OneDrive\Desktop\Schoolyte-main\Edco-API\resources\views/Dashboard.blade.php ENDPATH**/ ?>

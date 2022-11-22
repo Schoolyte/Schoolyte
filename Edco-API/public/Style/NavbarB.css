@@ -5,6 +5,7 @@
   }
 
 
+<<<<<<< HEAD
 
 .Logo-img{
     position: absolute;
@@ -13,6 +14,14 @@
 
     left: 93px;
     top: 63px;
+=======
+.Logo-img{
+    position: absolute;
+width: 151px;
+height: 37px;
+left: 93px;
+top: 63px;
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
 
 }
 
@@ -22,22 +31,30 @@
     box-sizing: border-box;
   }
 .menu-beranda{
+    position: absolute;
     list-style: none;
+<<<<<<< HEAD
     padding-left: 685px;
     padding-top: 33px;
+=======
+    padding-left: 928px;
+    padding-top: 73px;
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
 
     left: 90px;
 
 }
 
 
+<<<<<<< HEAD
 .menu-beranda{
     list-style: none;
     padding-left: 685px;
 
 
+=======
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
 
-}
 
 .navbar {
 
@@ -72,7 +89,10 @@
     top:73px;
     left:928px;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
     padding-left:25px;
     padding-right:25px;
 
@@ -92,7 +112,11 @@
     background: #000000;
     border-radius: 50px;
 
+<<<<<<< HEAD
     font-family: 'Lato';
+=======
+    font-family: 'Lato', sans-serif;
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
 
 font-style: normal;
 font-weight: 800;
@@ -102,7 +126,11 @@ color:white;
 
 }
 
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> ba22c0516619a1172ce9015a48467c9a1c89403f
 
 .btn-login:active{
     cursor: pointer;
