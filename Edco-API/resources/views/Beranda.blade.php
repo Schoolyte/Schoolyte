@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Login Page</title>
+        <title>Home Page</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');">
@@ -137,4 +137,4 @@
             </div>
         </body>
 </html>
-
+@include('components.Footer')

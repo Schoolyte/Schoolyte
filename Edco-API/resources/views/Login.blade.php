@@ -19,8 +19,9 @@
             <body>
                 <img src="assets/logo.png" class="logo-img" alt="logo-Scoolyte">
 
-                <form  action="{{route('postlogin')}}" method="post" class="LoginForm">
+                <form action={{ route('postlogin') }} method="post" class="LoginForm">
                     {{ csrf_field() }}
+
                     <div class="title">
                         LOGIN
                     </div>
@@ -28,7 +29,7 @@
                     <div  class="label">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label-ID">ID/NIS/NIP</label>
-                        <input type="email" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan ID/NIS/NIP anda">
+                        <input type="text" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan ID/NIS/NIP anda">
                         <div id="emailHelp" class="form-text" ></div>
                     </div>
                     <div class="mb-3">
@@ -37,7 +38,7 @@
                         <div id="emailHelp" class="form-text" ></div>
                     </div>
                     </div>
-                    <button type="button" class="btn-login">Login</button>
+                    <button type="submit" class="btn-login" >Login</button>
 
                 </form>
                 <img src="assets/login1.png" class='login-img' alt=" " />
