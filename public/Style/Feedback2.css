@@ -1,0 +1,61 @@
+.feedback{
+    position: absolute;
+width: 1077px;
+height: 735px;
+left: 192px;
+top: 167px;
+bottom: 100px;
+
+background: #FFFFFF;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+.icon-feedback{
+    position: absolute;
+width: 196px;
+height: 195px;
+left: 453px;
+top: 104px;
+}
+h1{
+    position: absolute;
+    width: 859px;
+    height: 72px;
+    left: 109px;
+    top: 425px;
+    font-family: 'Glory', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: rgba(0, 0, 0, 0.8);
+}
+.btn-back{
+    font-family: 'Glory', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 38px;
+
+color: #F6F6F6;
+
+position: absolute;
+width: 270px;
+height: 70px;
+left: 403px;
+top: 590px;
+
+background: #000000;
+border-radius: 50px;
+}
+.btn-back:active{
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 2px 2px 4px 4px rgb(0,0,0);
+    color: #f6f6f650;
+}
+.kosong{
+    padding-top: 900px;
+}

@@ -1,0 +1,470 @@
+.tittle-page{
+    position: absolute;
+    width: 100%;
+  height: 221px;
+  
+  left: 0px;
+  top: 199px;
+  z-index: -1;
+  background: rgba(255, 199, 0, 0.7);
+  
+  }
+  .tittle-page>:nth-child(1){
+    position: absolute;
+  width: 1171px;
+  height: 43px;
+  left: 93px;
+  top: 63px;
+  
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+  
+  color: #000000;
+  }
+  
+  ul.breadcrumb {
+    position: absolute;
+    top: 126px;
+    padding-left: 93px; 
+    list-style: none;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  }
+  
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #676767;
+    text-decoration: none;
+  }
+  
+  
+  ul.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .judul{
+    position: absolute;
+width: 900px;
+height: 78px;
+left: 354px;
+top: 508px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+
+color: #000000;
+  }
+  .deskripsi>:nth-child(1){
+    position: absolute;
+width: 252px;
+height: 67px;
+left: 93px;
+top: 693px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 67px;
+
+color: #000000;
+  }
+  .deskripsi>:nth-child(2){
+    position: absolute;
+width: 1210px;
+height: 84px;
+left: 93px;
+top: 789px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+
+color: #000000;
+
+  }
+  .deskripsi>:nth-child(3){
+    position: absolute;
+width: 750px;
+height: 44px;
+left: 50px;
+top: 943px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 44px;
+text-align: center;
+
+color: #000000;
+  }
+  .pendaftaran{
+    position: absolute;
+width: 834px;
+height: 159px;
+left: 303px;
+top: 1045px;
+
+background: #F6F6F6;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  .pendaftaran>:nth-child(1){
+    position: absolute;
+width: 350px;
+height: 34px;
+left:108px;
+top: 25px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+
+color: #000000;
+  }
+  .pendaftaran>:nth-child(2){
+    position: absolute;
+width: 470px;
+height: 54px;
+left: 35px;
+top: 72px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+  }
+  .btn-daftar{
+    position: absolute;
+width: 205px;
+height: 44px;
+left: 592px;
+top: 55px;
+border: none;
+background: #000000;
+border-radius: 20px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  }
+  .btn-daftar:active{
+    cursor: pointer;
+    background-color: #676767;
+  }
+  h1{
+    position: absolute;
+    width: 1001px;
+    height: 77px;
+    left: 69px;
+    top: 85px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(242, 78, 26, 0.8);
+  }
+
+  .form-popup {
+    display: none;
+    position: absolute;
+    width: 1138px;
+    height: 759px;
+    bottom: 5px;
+    right: px;
+    background-color: #FFFFFF;
+    visibility: visible;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+
+  .identitas{
+    position: absolute;
+    width: 847px;
+    height: 462px;
+    left: 147px;
+    top: 213px;
+
+    background: #F6F6F6;
+    border-radius: 5px;
+  }
+  .identitas>:nth-child(1){
+    position: absolute;
+width: 500px;
+height: 24px;
+left: 34px;
+top: 39px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+  }
+
+.identitas>:nth-child(2){
+    position: absolute;
+width: 490px;
+height: 24px;
+left: 34px;
+top: 78px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.identitas>:nth-child(3){
+    position: absolute;
+width: 490px;
+height: 24px;
+left: 34px;
+top: 117px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+  .form-container {
+    
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 0.24);
+  }
+  
+  .form-label{
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 34px;
+    top: 183px;
+
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #000000;
+  }
+  .form-control{
+    position: absolute;
+    width: 776px;
+    height: 102px;
+    left: 34px;
+    top: 222px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+.btn-submit{
+  position: absolute;
+  width: 130px;
+  height: 44px;
+  left: 361px;
+  top: 373px;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+
+
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 10px;
+}
+.btn-submit:active{
+  cursor: pointer;
+  background-color: rgb(52, 52, 52);
+  color: #F6F6F6;
+}
+.btn-cancel{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 1100px;
+  background-color: red;
+  border: none;
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 800;
+}
+  .daftar-anggota{
+    position: absolute;
+width: 1205px;
+height: 1123px;
+left: 118px;
+top: 1299px;
+
+background: #F6F6F6;
+border-radius: 15px;
+  }
+  .daftar-anggota>:nth-child(1){
+    position: absolute;
+width: 130px;
+height: 130px;
+left: 92px;
+top: 55px;
+  }
+  .daftar-anggota>:nth-child(2){
+    position: absolute;
+width: 461px;
+height: 55px;
+left: 271px;
+top: 74px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 45px;
+line-height: 55px;
+
+color: #000000;
+  }
+  .daftar-anggota>:nth-child(3){
+    position: absolute;
+width: 269px;
+height: 29px;
+left: 274px;
+top: 136px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height */
+
+
+color: #000000;
+  }
+  .tabel-anggota{
+    position: absolute;
+    left: 165px;
+    top: 338px;
+  }
+  .prestasi-ekskul>:nth-child(1){
+    position: absolute;
+width: 7  96px;
+height: 78px;
+left: 440px;
+top: 2535px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+
+color: #000000;
+  }
+  .prestasi-ekskul>:nth-child(2){
+    position: absolute;
+width: 652px;
+height: 31px;
+left: 103px;
+top: 2777px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+
+  }
+  .prestasi-ekskul>:nth-child(3){
+    position: absolute;
+width: 512px;
+height: 87px;
+left: 121px;
+top: 2844px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 29px;
+text-align: center;
+
+color: #000000;
+  }
+  .prestasi-ekskul>:nth-child(4){
+    position: absolute;
+width: 538px;
+height: 316px;
+left: 751px;
+top: 2695px;
+  }

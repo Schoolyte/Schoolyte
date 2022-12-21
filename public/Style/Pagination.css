@@ -1,0 +1,91 @@
+.tittle-page{
+    position: absolute;
+    width: 100%;
+    height: 221px;
+    
+    left: 0px;
+    top: 199px;
+    z-index: -1;
+    background: rgba(255, 199, 0, 0.7);
+  
+  }
+  .tittle-page>:nth-child(1){
+    position: absolute;
+    width: 1171px;
+    height: 43px;
+    left: 93px;
+    top: 63px;
+    
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #000000;
+  }
+  
+  ul.breadcrumb {
+    position: absolute;
+    top: 126px;
+    padding-left: 93px; 
+    list-style: none;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #000000;
+  }
+  
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  ul.breadcrumb li a {
+    color: #676767;
+    text-decoration: none;
+  }
+  
+  
+  ul.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .guru{
+    position: absolute;
+    width: 450px;
+    height: 43px;
+    left: 93px;
+    top: 530px;
+
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 43px;
+    /* identical to box height */
+
+
+    color: #000000;
+  }
+  .pagination-jadwal{
+    position: absolute;
+width: 1384px;
+height: 977px;
+left: 78px;
+top: 665px;
+
+background: #ffffff;
+border-radius: 15px;
+}

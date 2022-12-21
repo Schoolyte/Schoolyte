@@ -1,0 +1,274 @@
+.introB{
+    display: flex;
+    height: 77px;
+}
+
+.i-rightB{
+position: absolute;
+width: 798px;
+height: 486px;
+left: 541px;
+top: 284px;
+
+}
+.i-leftB{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 195px;
+    flex: 0;
+    z-index:-1;
+}
+.i-leftB>:nth-child(1){
+    position: absolute;
+width: 360px;
+height: 96px;
+left: 93px;
+top: 10px;
+
+font-family: 'Glroy', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 80px;
+line-height: 96px;
+/* identical to box height */
+
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+.i-leftB>:nth-child(2){
+    position: absolute;
+width: 437px;
+height: 108px;
+left: 100px;
+top: 116px;
+
+font-family: 'Glroy', sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 36px;
+
+color: #000000;
+}
+.btn-Login{
+    position: absolute;
+width: 260px;
+height: 70px;
+left: 93px;
+top: 304px;
+
+background: #000000;
+border-radius: 50px;
+border-color: #000000;
+font-family: 'Glroy', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 38px;
+color: #F6F6F6;
+}
+
+.btn-Login:active{
+    cursor: pointer;
+    background-color: #000000;
+    box-shadow: 2px 2px 4px 4px rgb(0,0,0);
+    color: #f6f6f650;
+}
+
+.img-brnd{
+    position: absolute;
+    width: 798px;
+    height: 486px;
+  left: 170px;
+  top: 30px;
+}
+
+.news{
+    position: absolute;
+    width: 1123px;
+height: 419px;
+    left: 159px;
+top: 898px;
+}
+a{
+    text-decoration: none;
+    
+}
+.judul{
+    position: absolute;
+width: 977px;
+height: 86px;
+left: 73px;
+top: 208px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 43px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+h1{
+    position: absolute;
+width: 724px;
+height: 50px;
+left: 199px;
+top: 301px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+img{
+   
+width: 1123px;
+height: 419px;
+}
+.penerimaan{
+    box-sizing: border-box;
+
+position: absolute;
+width: 1123px;
+height: 396px;
+left: 159px;
+top: 1438px;
+
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.penerimaan>:nth-child(1){
+    position: absolute;
+width: 903px;
+height: 67px;
+left: 229px;
+top: 41px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 67px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.penerimaan>:nth-child(2){
+    position: absolute;
+width: 1061px;
+height: 70px;
+left: 30px;
+top: 135px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+
+color: #000000;
+}
+.btn-daftar{
+    position: absolute;
+width: 319px;
+height: 70px;
+left: 401px;
+top: 262px;
+
+background: #000000;
+border-radius: 50px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 39px;
+border: none;
+color: #F6F6F6;
+}
+.btn-daftar:active{
+    cursor: pointer;
+    background-color: rgb(111, 111, 111);
+    color: beige;
+
+}
+.mutasi-masuk{
+    box-sizing: border-box;
+
+position: absolute;
+width: 1123px;
+height: 396px;
+left: 159px;
+top: 1960px;
+
+border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.mutasi-masuk>:nth-child(1){
+    position: absolute;
+width: 903px;
+height: 67px;
+left: 229px;
+top: 41px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 67px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.mutasi-masuk>:nth-child(2){
+    position: absolute;
+width: 1061px;
+height: 70px;
+left: 30px;
+top: 135px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 30px;
+line-height: 35px;
+text-align: center;
+
+color: #000000;
+}
+.btn-mutasi{
+    position: absolute;
+width: 319px;
+height: 70px;
+left: 401px;
+top: 262px;
+
+background: #000000;
+border-radius: 50px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 39px;
+border: none;
+color: #F6F6F6;
+}
+.btn-mutasi:active{
+    cursor: pointer;
+    background-color: rgb(111, 111, 111);
+    color: beige;
+}
