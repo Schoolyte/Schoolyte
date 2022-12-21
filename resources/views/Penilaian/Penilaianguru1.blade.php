@@ -131,4 +131,4 @@
     </div>
 </body>
 </html>
-@include('components.Footer')
+
