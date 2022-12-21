@@ -107,3 +107,13 @@ letter-spacing: 0.03em;
 
 color: rgba(0, 0, 0, 0.8);
   }
+  .penilaian-place{
+    position: absolute;
+width: 1005px;
+height: 986px;
+left: 352px;
+top: 661px;
+
+background: #F6F6F6;
+border-radius: 15px;
+  }

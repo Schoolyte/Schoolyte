@@ -12,7 +12,7 @@
 </head>
 <body>
     @yield('Navbar')
-    <div class="penilaian-guru">
+    <div class="penilaian-guru" >
         <div class="tittle-page">
             <span>Penilaian Pembelajaran</span>
             <ul class="breadcrumb">
@@ -81,11 +81,7 @@
                 </div>
               </div>
           </div>
-         
-            
-          </div>
-        </div>
-        <div class="dropdown">
+          <div class="dropdown">
           <button class="dropbtn4 active" role="button"><img src="/assets/School Building.png" width="35" height="35" /> Kelas X
             <i class="fa fa-caret-down"></i>
           </button>
@@ -114,7 +110,7 @@
           </div>
         </div>
         <div class="dropdown">
-          <button class="dropbtn3 active" role="button"><img src="/assets/School Building.png" width="35" height="35" /> Kelas X
+          <button class="dropbtn3 active" role="button"><img src="/assets/School Building.png" width="35" height="35" /> Kelas XII
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="content3 dropdown-content">
@@ -127,6 +123,11 @@
             </div>
           </div>
         </div>
+            
+          </div>
+          
+        </div>
+       
     </div>
 </body>
 </html>

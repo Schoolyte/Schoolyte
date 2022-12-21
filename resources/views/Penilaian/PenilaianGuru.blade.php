@@ -10,7 +10,7 @@
 </head>
 <body>
 @yield('Navbar')
-    <div class="penilaian-guru" style="min-height: 300vh;">
+    <div class="penilaian-guru" style="min-height: 210vh;">
         <div class="tittle-page">
             <span>Penilaian Pembelajaran</span>
             <ul class="breadcrumb">
@@ -21,6 +21,9 @@
         <div class="warning">
             <span>Anda dapat melihat dan memantau nilai belajar seluruh siswa</span>
             <span>• Nilai terdiri dari nilai tugas hingga nilai ujian</span>
+        </div>
+        <div class="penilaian-place">
+            
         </div>
     </div>
 </body>
