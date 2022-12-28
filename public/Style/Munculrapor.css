@@ -12,7 +12,7 @@
 width: 1171px;
 height: 43px;
 left: 93px;
-top: 33px;
+top: 70px;
 
 font-family: 'Glory',sans-serif;
 font-style: normal;
@@ -25,7 +25,7 @@ color: #000000;
 ul.breadcrumb {
     position: absolute;
     top: 126px;
-    padding-left: 93px; 
+    padding-left: 93px;
     list-style: none;
     background-color: transparent;
     font-family: 'Lato', sans-serif;
@@ -35,26 +35,26 @@ ul.breadcrumb {
   line-height: 18px;
   color: #000000;
   }
-  
-  
+
+
   ul.breadcrumb li {
     display: inline;
     font-size: 18px;
   }
-  
-  
+
+
   ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
     content: "/\00a0";
   }
-  
+
   ul.breadcrumb li a {
     color: #676767;
     text-decoration: none;
   }
-  
-  
+
+
   ul.breadcrumb li a:hover {
     color: #000000;
     text-decoration: underline;
@@ -72,7 +72,7 @@ top: 492px;
 width: 550px;
 height: 54px;
 left: 272px;
-top: 451px;
+top: 500px;
 
 font-family: 'Glory',sans-serif;
 font-style: normal;
@@ -132,7 +132,7 @@ color: rgba(242, 78, 26, 0.8);
   position: absolute;
 width: 1187px;
 height: 32px;
-left: 42px;
+left: 55px;
 top: 59px;
 
 font-family: 'Lato',sans-serif;
@@ -207,7 +207,7 @@ width: 130px;
 height: 44px;
 left: 441px;
 top: 587px;
-background-color: #F24E1A;
+background-color: #000000;
 border: none;
 border-radius: 100px;
 font-family: 'Lato',sans-serif;
@@ -219,167 +219,6 @@ color: #FFFFFF;
 }
 .btn-active:active{
   cursor: pointer;
-    background-color: #F24E1A;
+    background-color: #5c5c5c;
     color: #676767;
-}
-.btn-lihat1{
-  position: absolute;
-width: 110px;
-height: 30px;
-left: 303px;
-top: 307px;
-border: none;
-background: #F24E1A;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-font-family: 'Gilroy', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-color: #FFFFFF;
-}
-.btn-lihat1:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #676767;
-}
-.btn-download1{
-
-  position: absolute;
-width: 110px;
-height: 30px;
-left: 303px;
-top: 349px;
-border: none;
-background: #F24E1A;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-font-family: 'Gilroy', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-color: #FFFFFF;
-}
-.btn-download1:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #676767;
-}
-.btn-lihat2{
-  position: absolute;
-width: 110px;
-height: 30px;
-left: 590px;
-top: 303px;
-border: none;
-background: #F24E1A;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-font-family: 'Gilroy', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-color: #FFFFFF;
-}
-.btn-lihat2:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #676767;
-}
-.btn-download2{
-  position: absolute;
-width: 110px;
-height: 30px;
-left: 590px;
-top: 349px;
-border: none;
-background: #F24E1A;
-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
-font-family: 'Gilroy', sans-serif;
-font-style: normal;
-font-weight: 800;
-font-size: 15px;
-line-height: 18px;
-color: #FFFFFF;
-}
-.btn-download2:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #676767;
-}
-.btn-kelas-X{
-  position: absolute;
-width: 194px;
-height: 67px;
-left: 93px;
-top: 926px;
-font-family: 'Gilroy', sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 29px;
-border: none;
-color: #000000;
-background: transparent;
-border-radius: 15px;
-}
-.btn-kelas-X:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #F6F6F6;
-}
-.icon-btn1{
-  width: 35px;
-height: 35px;
-
-}
-.btn-kelas-XI{
-  position: absolute;
-width: 194px;
-height: 67px;
-left: 93px;
-top: 1026px;
-font-family: 'Gilroy',sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 29px;
-border: none;
-color: #000000;
-background: transparent;
-border-radius: 15px;
-}
-.btn-kelas-XI:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #F6F6F6; 
-}
-.icon-btn2{
-  width: 35px;
-height: 35px;
-}
-.btn-kelas-XII{
-  position: absolute;
-width: 194px;
-height: 67px;
-left: 93px;
-top: 1136px;
-font-family: 'Gilroy',sans-serif;
-font-style: normal;
-font-weight: 300;
-font-size: 25px;
-line-height: 29px;
-border: none;
-color: #000000;
-background: transparent;
-border-radius: 15px;
-}
-.btn-kelas-XII:active{
-  cursor: pointer;
-  background-color: #F24E1A;
-  color: #F6F6F6; 
-}
-.icon-btn3{
-  width: 35px;
-  height: 35px;
 }

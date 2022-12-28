@@ -14,7 +14,7 @@
 </head>
 <body>
     @yield('Navbar')
-    <div class="jadwal-guru">
+    <div class="jadwal-guru" style="min-height: 250vh;">
         <div class="tittle-page">
             <span>Jadwal Kelas</span>
             <ul class="breadcrumb">

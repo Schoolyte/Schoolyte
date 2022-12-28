@@ -1,0 +1,496 @@
+.tittle-page{
+    position: absolute;
+    width: 100%;
+  height: 221px;
+
+  left: 0px;
+  top: 199px;
+  z-index: -1;
+  background: rgba(255, 199, 0, 0.7);
+
+  }
+  .tittle-page>:nth-child(1){
+    position: absolute;
+  width: 1171px;
+  height: 43px;
+  left: 93px;
+  top: 63px;
+
+  font-family: 'Lato',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 43px;
+
+  color: #000000;
+  }
+
+  ul.breadcrumb {
+    position: absolute;
+    top: 126px;
+    padding-left: 93px;
+    list-style: none;
+    background-color: transparent;
+    font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+  }
+
+
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    color: #676767;
+    text-decoration: none;
+  }
+
+
+  ul.breadcrumb li a:hover {
+    color: #000000;
+    text-decoration: underline;
+  }
+  .judul{
+    position: absolute;
+width: 900px;
+height: 78px;
+left: 450px;
+top: 508px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+
+color: #000000;
+  }
+  .erol>:nth-child(1){
+    position: absolute;
+width: 726px;
+height: 67px;
+left: 93px;
+top: 693px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 67px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .erol>:nth-child(2){
+    position: absolute;
+width: 1210px;
+height: 42px;
+left: 93px;
+top: 789px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+/* identical to box height */
+
+
+color: #000000;
+  }
+
+  .erol1>:nth-child(1){
+    position: absolute;
+width: 726px;
+height: 67px;
+left: 93px;
+top: 1300px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 55px;
+line-height: 67px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .erol1>:nth-child(2){
+    position: absolute;
+width: 1210px;
+height: 42px;
+left: 93px;
+top: 1390px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 42px;
+/* identical to box height */
+
+
+color: #000000;
+  }
+  .pendaftaran{
+    position: absolute;
+width: 834px;
+height: 159px;
+left: 303px;
+top: 1045px;
+
+background: #F6F6F6;
+box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  }
+  .pendaftaran>:nth-child(1){
+    position: absolute;
+width: 350px;
+height: 34px;
+left:108px;
+top: 25px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+
+color: #000000;
+  }
+  .pendaftaran>:nth-child(2){
+    position: absolute;
+width: 470px;
+height: 54px;
+left: 35px;
+top: 72px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 23px;
+line-height: 27px;
+text-align: center;
+
+color: #000000;
+  }
+  .btn-daftar{
+    position: absolute;
+width: 205px;
+height: 44px;
+left: 592px;
+top: 55px;
+border: none;
+background: #000000;
+border-radius: 20px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+  }
+  .btn-daftar:active{
+    cursor: pointer;
+    background-color: #676767;
+  }
+  h1{
+    position: absolute;
+    width: 1001px;
+    height: 77px;
+    left: 69px;
+    top: 85px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 30px;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: rgba(242, 78, 26, 0.8);
+  }
+
+  .form-popup {
+    display: none;
+    position: absolute;
+    width: 1138px;
+    height: 759px;
+    top:-320px;
+    left:-100px;
+    background-color: #FFFFFF;
+    visibility: visible;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+
+
+
+  .identitas{
+    position: absolute;
+    width: 847px;
+    height: 462px;
+    left: 147px;
+    top: 213px;
+
+    background: #F6F6F6;
+    border-radius: 5px;
+  }
+  .identitas>:nth-child(1){
+    position: absolute;
+width: 500px;
+height: 24px;
+left: 34px;
+top: 39px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+  }
+
+.identitas>:nth-child(2){
+    position: absolute;
+width: 490px;
+height: 24px;
+left: 34px;
+top: 78px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+.identitas>:nth-child(3){
+    position: absolute;
+width: 490px;
+height: 24px;
+left: 34px;
+top: 117px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+}
+
+  .form-container {
+
+    padding: 10px;
+    background-color: rgba(248, 248, 248, 0.24);
+  }
+
+  .form-label{
+    position: absolute;
+    width: 200px;
+    height: 24px;
+    left: 34px;
+    top: 183px;
+
+    font-family: 'Lato',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+
+
+    color: #000000;
+  }
+  .form-control{
+    position: absolute;
+    width: 776px;
+    height: 102px;
+    left: 34px;
+    top: 222px;
+
+    background: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+.btn-submit{
+  position: absolute;
+  width: 130px;
+  height: 44px;
+  left: 361px;
+  top: 373px;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+
+
+
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 10px;
+}
+.btn-submit:active{
+  cursor: pointer;
+  background-color: rgb(52, 52, 52);
+  color: #F6F6F6;
+}
+.btn-cancel{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 1100px;
+  background-color: red;
+  border: none;
+  font-family: 'Gilroy',sans-serif;
+  font-weight: 800;
+}
+.table{
+    position: absolute;
+    width: 1020px;
+    height: 770px;
+left: 202px;
+top: 1500px;
+border: 1px #000000;
+background: #F6F6F6;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+thead{
+    position: relative;
+
+    font-family: 'Gilroy',sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 145%;
+    /* or 36px */
+
+    text-align: center;
+    letter-spacing: 0.025em;
+
+    color: #000000;
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  .dokumentasi>:nth-child(1){
+    position: absolute;
+width: 392px;
+height: 78px;
+left: 93px;
+top: 2325px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 78px;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  }
+  .dokumentasi>:nth-child(2){
+    position: absolute;
+width: 913px;
+height: 29px;
+left: 80px;
+top: 2414px;
+
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 29px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+  }
+  .dokumentasi li a{
+    text-decoration: none;
+    position: absolute;
+width: 248px;
+height: 31px;
+left: 420px;
+top: 2550px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+  }
+
+
+
+.img-dok{
+    position: absolute;
+width: 310px;
+height: 182px;
+padding-left:30px;
+
+background: url(image.png);
+border-radius: 10px;
+}
+
+.keterangan{
+
+position: absolute;
+width: 778px;
+height: 58px;
+left: 430px;
+top: 2590px;
+list-style: none;
+font-family: 'Gilroy';
+font-style: normal;
+
+font-size: 25px;
+line-height: 29px;
+
+color: #000000;
+}

@@ -1,5 +1,5 @@
 
-.footer{    
+.footer{
     position: relative;
     min-height: auto;
 }
@@ -17,13 +17,13 @@
 }
 
 .boxed{
-    padding-left:125px;
-  
+    padding-left:170px;
+
 }
 
 .imgfooter{
-    padding-left:120px;
-   
+    padding-left:140px;
+
 }
 
 .footer-body{
@@ -37,16 +37,19 @@
 }
 
 .logo-img{
-     padding-bottom:24px;    
+     padding-bottom:24px;
+     margin-bottom:30px;
 }
 
 .footer-text{
     position:absolute;
     padding-left:50px;
+    padding-top:20px;
 }
 
 .icon-map{
     position:absolute;
+    padding-top:22px;
 }
 
 .icon-copy{
@@ -67,7 +70,7 @@
 }
 
 .material-symbols-outlined{
-    
+
     padding-left:50px;
 }
 .footer-text2{
@@ -78,10 +81,26 @@
 
 .kontak{
     padding-top: 0px;
-    padding-left:850px;
+    padding-left:815px;
+
 }
 
 .footer-col{
-    padding-left:45px;
+    padding-left:35px;
     width: 100%;
+}
+
+.footer-col>:nth-child(1){
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: #000000;
+}
+
+.underkontak{
+    padding-left: 45px;
 }

@@ -1,42 +1,52 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MutasiMasukController;
+use App\Http\Controllers\MutasiKeluarController;
+use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\PendaftaranController;
+use App\Http\Controllers\MutasiMasuk2Controller;
+use App\Http\Controllers\Pendaftaran2Controller;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\TambahberitaController;
+use App\Http\Controllers\JadwalKelasController;
+use App\Http\Controllers\RaporController;
+use App\Http\Controllers\PenilaianController;
+use App\Http\Controllers\OsisController;
+use App\Http\Controllers\EkskulController;
 
 
-Route::get('Dashboard', function () {
-    return view('Dashboard');
-})->name('Dashboard');
 
-Route::get('Pendaftaran', function () {
-    return view('Beranda/Pendaftaran');
-});
 Route::get('Feedback', function () {
     return view('Beranda/Feedback');
 });Route::get('Feedback2', function () {
     return view('Beranda/Feedback2');
 });
-Route::get('Mutasimasuk', function () {
-    return view('Beranda/Mutasimasuk');
-});
+
 Route::get('Hal_utama', function () {
     return view('Berita/Hal_utama');
 });
-Route::get('Regisberita', function () {
-    return view('Berita/Regisberita');
-})->name('Berita/Regisberita');
+
 Route::get('Newspage', function () {
     return view('Berita/Newspage');
 });
-Route::get('Beritasaya', function () {
-    return view('Berita/Beritasaya');
-})->name('Berita/Beritasaya');
-Route::get('Lihatrapor', function () {
-    return view('rapor/Lihatrapor');
-})->name('rapor/Lihatrapor');
 
-Route::get('Munculrapor', function () {
-    return view('rapor/Munculrapor');
-});
+Route::get('Rapordiskepe', function () {
+    return view('rapor/Rapordiskepe');
+})->name('rapor/Rapordiskepe');
+
+Route::get('Tabelrapor', function () {
+    return view('rapor/Tabelrapor');
+})->name('rapor/Tabelrapor');
+
+Route::get('Rapornonsiswa', function () {
+    return view('rapor/Rapornonsiswa');
+})->name('rapor/Rapornonsiswa');
+
+Route::get('Rapornonsiswa2', function () {
+    return view('rapor/Rapornonsiswa2');
+})->name('rapor/Rapornonsiswa2');
+
 Route::get('Penilaiansiswa1', function () {
     return view('Penilaian/Penilaiansiswa1');
 })->name('Penilaian/Penilaiansiswa1');
@@ -53,12 +63,11 @@ Route::get('Inputnilai', function () {
 Route::get('PenilaianGuruDinas', function () {
     return view('Penilaian/PenilaianGuruDinas');
 })->name('Penilaian/PenilaianGuruDinas');
+
 Route::get('PenilaianGuru', function () {
     return view('Penilaian/PenilaianGuru');
 })->name('Penilaian/PenilaianGuru');
-Route::get('Jadwalsiswa', function () {
-    return view('Jadwal/Jadwalsiswa');
-})->name('Jadwal/Jadwalsiswa');
+
 Route::get('Jadwalguru', function () {
     return view('Jadwal/Jadwalguru');
 });
@@ -74,12 +83,17 @@ Route::get('Dispen_lihatjadwalguru', function () {
 Route::get('View_Jadwal_Guru', function () {
     return view('Jadwal/View_Jadwal_Guru');
 });
-Route::get('Page_ekskul', function () {
-    return view('Ekstra/Page_ekskul');
-})->name('Ekstra/Page_ekskul');
+Route::get('Dispen_lihatjadwalguru2', function () {
+    return view('Jadwal/Dispen_lihatjadwalguru2');
+})->name('Jadwal/Dispen_lihatjadwalguru2');
+
+
+
+// Siswa
 Route::get('Paskibra', function () {
     return view('Ekstra/Paskibra');
 })->name('Ekstra/Paskibra');
+
 Route::get('Profile', function () {
     return view('Profile/Profile');
 })->name('Profile/Profile');
@@ -92,27 +106,13 @@ Route::get('Stand', function () {
     return view('Kantin/Stand');
 })->name('Kantin/Stand');
 
-Route::get('Halawal_osis', function () {
-    return view('OSIS/Halawal_osis');
-})->name('OSIS/Halawal_osis');
-Route::get('Devisi_humas', function () {
-    return view('OSIS/Devisi_humas');
-})->name('OSIS/Devisi_humas');
 Route::get('DaftarFasilitas', function () {
     return view('Fasilitas/DaftarFasilitas');
 })->name('Fasilitas/DaftarFasilitas');
 
 
 
-
-
-
-
-
-Route::get('/', function () {
-    return view('Beranda/Beranda');
-})->name('Beranda/Beranda');
-
+// Login
 Route::get('/Login', function () {
     return view('Login');
 })->name('Login');
@@ -121,5 +121,55 @@ Route::post('/postlogin', [App\Http\Controllers\LoginController::class, 'postlog
 
 Route::get('/logout', [App\Http\Controllers\LoginController::class, 'logout'])->name('logout');
 
+
+
+
+//Controllers Done
+
+//Beranda
+Route::get('/', [BerandaController::class,'beranda'])->name('Beranda/Beranda');
+
+  //Mutasi Masuk
+  Route::get('Beranda/MutasiMasuk', [MutasiMasukController::class,'index'])->name('Beranda/MutasiMasuk');
+  Route::get('Beranda/MutasiMasuk2', [MutasiMasuk2Controller::class,'index2'])->name('Beranda/MutasiMasuk2');
+  Route::post('Beranda/MutasiMasuk/store', [MutasiMasukController::class,'store'])->name('Beranda/MutasiMasuk/store');
+
+  //Pendaftaran
+  Route::get('Beranda/Pendaftaran', [PendaftaranController::class,'pendaftaran'])->name('Beranda/Pendaftaran');
+  Route::get('Beranda/Pendaftaran2', [Pendaftaran2Controller::class,'pendaftaran2'])->name('Beranda/Pendaftaran2');
+  Route::post('Beranda/Pendaftaran/store', [PendaftaranController::class,'store'])->name('Beranda/Pendaftaran/store');
+
+//Mutasi Keluar
+Route::get('Mutasi/MutasiKeluar', [MutasiKeluarController::class,'mutasikeluar'])->name('Mutasi/MutasiKeluar');
+Route::get('Mutasi/FormMutasi', [MutasiKeluarController::class,'formmutasikeluar'])->name('Mutasi/FormMutasi');
+Route::Post('Mutasi/FormMutasi/store', [MutasiKeluarController::class,'store'])->name('Mutasi/FormMutasi/store');
+
+//Dashboard
+Route::get('Dashboard', [DashboardController::class,'dashboard'])->name('Dashboard');
+
+Route::get('Strukturorganisasi', [DashboardController::class,'strukturorganisasi'])->name('Strukturorganisasi');
+
+  //Berita
+  Route::get('Berita/Beritasaya', [DashboardController::class,'beritasaya'])->name('Berita/Beritasaya');
+
+  Route::get('Berita/Tambahberita', [DashboardController::class,'tambahberita'])->name('Berita/Tambahberita');
+  Route::post('Berita/Tambahberita/store', [TambahberitaController::class,'store'])->name('Berita/Tambahberita/store');
+
+//Navbar
+
+  //Akademik
+  Route::get('Jadwal/JadwalKelas', [JadwalKelasController::class,'jadwalkelas'])->name('Jadwal/JadwalKelas');
+
+  Route::get('Rapor/RaporSiswa', [RaporController::class,'rapor'])->name('Rapor/RaporSiswa');
+  Route::get('Rapor/RaporSiswa/RaporGanjil', [RaporController::class,'raporganjil'])->name('Rapor/RaporSiswa/RaporGanjil');
+  Route::get('Rapor/RaporSiswa/RaporGenap', [RaporController::class,'raporgenap'])->name('Rapor/RaporSiswa/RaporGenap');
+
+  Route::get('Penilaian/Penilaiansiswa1', [PenilaianController::class,'penilaian'])->name('Penilaian/Penilaiansiswa1');
+
+  //Kegiatan Sekolah
+  Route::get('OSIS/OSIS', [OSISController::class,'osis'])->name('OSIS/OSIS');
+  Route::get('OSIS/Divisi_humas', [OSISController::class,'divisihumas'])->name('OSIS/Divisi_humas');
+
+  Route::get('Ekstra/Ekskul', [EkskulController::class,'ekskul'])->name('Ekstra/Ekskul');
 
 

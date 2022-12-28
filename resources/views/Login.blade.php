@@ -28,8 +28,8 @@
 
                     <div  class="label">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label-ID">ID/NIS/NIP</label>
-                        <input type="text" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan ID/NIS/NIP anda">
+                        <label for="exampleInputEmail1" class="form-label-ID">E-mail</label>
+                        <input type="text" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan E-mail anda">
                         <div id="emailHelp" class="form-text" ></div>
                     </div>
                     <div class="mb-3">

@@ -1,0 +1,117 @@
+.title{
+    position: absolute;
+width: 400px;
+height: 44px;
+left: 139px;
+top: 219px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+}
+
+.Kartu-Pelajar{
+    position: absolute;
+width: 721.08px;
+height: 439px;
+left: 359px;
+top: 335px;
+
+filter: drop-shadow(2px 2px 11px rgba(0, 0, 0, 0.25));
+}
+
+.image-profile{
+    position: absolute;
+    display: inline-block;
+    width: 102px;
+    height: 102px;
+    left: 399px;
+    top: 400px;
+
+    border-radius: 200px;;
+}
+
+.Nama{
+    font-family: 'Lato';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 30px;
+
+color: #4C5161;
+    position: absolute;
+    display: inline-block;
+    left: 525px;
+    top: 405px;
+}
+
+.Status {
+    position: absolute;
+    display: inline-block;
+    left: 525px;
+    top: 435px;
+
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+
+color: #4C5161;
+}
+
+.NIS{
+    position: absolute;
+left: 456px;
+top: 553px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #4C5161;
+}
+
+.TTL{
+    position: absolute;
+    left: 456px;
+top: 593px;
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #4C5161;
+}
+
+.Alamat{
+    position: absolute;
+left: 485px;
+top: 633px;
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+
+color: #4C5161;
+}
+
+.indent{
+    top:800px;
+    position:absolute;
+    color:white;
+    }

@@ -110,7 +110,7 @@ color: rgba(0, 0, 0, 0.8);
   .penilaian-place{
     position: absolute;
 width: 1005px;
-height: 986px;
+height: 1050px;
 left: 352px;
 top: 661px;
 
@@ -148,7 +148,7 @@ border-radius: 15px;
     width: 194px;
     height: 230px;
     left: 99px;
-    top: 735px;
+    top: 727px;
   
     
    background: #F6F6F6;
@@ -279,10 +279,10 @@ color: #000000;
   }
   .pagination-jadwal{
     position: absolute;
-width: 1384px;
-height: 977px;
-left: 78px;
-top: 65px;
+    width: 904px;
+    height: 900px;
+left: 47px;
+top: 108px;
 
 background: #ffffff;
 border-radius: 15px;

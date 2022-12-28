@@ -9,26 +9,26 @@
     <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="Style/Paskibra.css">
-    <title>Document</title>
+    <link rel="stylesheet" href={{ asset("Style/Paskibra.css") }}>
+    <title>Paskriba | Schoolyte</title>
 </head>
 <body>
 @yield('Navbar')
-    <div class="paskibra">
-    <div class="tittle-page">
-            <span>Informasi Ekstrakurikuler</span>
+    <div class="paskibra" style="min-height: 420vh;">
+    <div class="tittle-page" >
+            <span>Informasi Ekstrakulikuler</span>
             <ul class="breadcrumb">
               <li><a href="#">Kegiatan Sekolah</a></li>
               <li><a href="/Page_ekskul">Ekstrakulikuler</a></li>
-              <li>Informasi Ekstrakurikuler</li>
+              <li>Informasi Ekstrakulikuler</li>
             </ul>
         </div>
         <span class="judul">Informasi Ekstrakurikuler</span>
         <div class="deskripsi">
             <span>PASKIBRA</span>
             <span>Pada tahun 2022
-                Schoolyte  telah meraih juara 1 
-                lomba paskibra a tingkat nasional 
+                Schoolyte  telah meraih juara 1
+                lomba paskibra a tingkat nasional
                 yang diadakan di Jakarta, Indonesia</span>
             <span>Jadwal : Hari Kamis (15.00-17.00)</span>
         </div>
@@ -43,25 +43,25 @@
                     <span>NISN&nbsp;&nbsp;  : 123456789</span>
                     <span>Kelas&nbsp; : X MIPA 1</span>
                     <form action="" class="form-container">
-                    
-                
+
+
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Alasan mengikuti</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Alasan anda"></textarea>
                         </div>
-                
+
                         <button type="submit" class="btn-submit" >submit</button>
                     </form>
-                    
-                    
+
+
                 </div>
                 <button type="button" class="btn-cancel"  onclick="closeForm()">X</button>
-            </div>  
+            </div>
         </div>
         <div class="daftar-anggota">
             <img src="/assets/img-siswa.png" alt="" srcset="">
             <span>Supriyadi, S.pd.</span>
-            <span>Guru Pembina Paskibra</span>            
+            <span>Guru Pembina Paskibra</span>
             <div class="tabel-anggota">
             <table id="example" class="display" style=" width: 847px;height: 661px; " >
                 <thead>
@@ -69,7 +69,7 @@
                         <th>Nama Anggota</th>
                         <th>NISN</th>
                         <th>Kelas</th>
-                        
+
                     </tr>
                 </thead>
                 <tbody>
@@ -77,151 +77,151 @@
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                       
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                       
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                       
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                       
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                       
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                     <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                     <tr>
                         <td>Novi Rosidhatul Aulia</td>
                         <td>123456789</td>
                         <td>XI MIPA 2</td>
-                        
+
                     </tr>
                 </tbody>
                 <tfoot>
@@ -229,16 +229,16 @@
                         <th>Nama Anggota</th>
                         <th>NISN</th>
                         <th>Kelas</th>
-                       
+
                     </tr>
                 </tfoot>
             </table>
             </div>
         </div>
         <div class="prestasi-ekskul">
-            <span>Prestasi Yang Diraih</span>
+            <span>Dokumentasi Ekskul</span>
             <span>JUARA 1 PASKIBRA TINGKAT NASIONAL</span>
-            <span>Pada tahun 2022 Schoolyte  telah meraih 
+            <span>Pada tahun 2022 Schoolyte  telah meraih
                 juara 1 lomba paskibra a tingkat nasional yang diadakan di Jakarta, Indonesia</span>
             <img src="/assets/image 15.png" alt="" sizes="" srcset="">
         </div>
@@ -252,7 +252,7 @@
       function openForm() {
         document.getElementById("myForm").style.display = "block";
       }
-      
+
       function closeForm() {
         document.getElementById("myForm").style.display = "none";
       }

@@ -2,28 +2,28 @@
     padding-top:33px;
     padding-bottom: 10px;
   }
-  
+
   .navbar-brand{
     position: absolute;
     width: 151px;
     height: 37px;
     left: 93px;
     top: 73px;
-    
+
   }
-  
+
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   ul{
     list-style: none;
   }
-  
+
   nav {
-    
+
     line-height: 18px;
     background-color: white;
     margin: 0 auto;
@@ -32,24 +32,31 @@
     align-items: center;
   }
   .menu{
-    padding-left: 395px;
+    padding-left: 380px;
     top: 73px;
-    
+
   }
   .menu>:nth-child(7){
     padding-left: 90px;
-   
+
   }
-  
+  .Notif{
+    left:-30px;
+    top:10px;
+    }
+      .Profil{
+          left:-30px;
+        top:10px;
+      }
   .Notif .submenu{
-    
+
     padding-left:15px;
     background-color:#F6F6F6;
     width:250px;
     text-align:justify;
     z-index: 1;
   }
-  
+
   .Profil .submenu{
     background-color:#F6F6F6;
     width:150px;
@@ -70,8 +77,8 @@
     color: black ;
     padding: 12px 25px ;
     z-index: 1;
-    
-    
+
+
   }
   .menu a:hover{
     color: blueviolet;
@@ -84,9 +91,9 @@
     display: none;
     padding-left: 27px;
     z-index: 1;
-  
+
   }
-  
+
   .submenu a{
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -94,10 +101,10 @@
     text-decoration: none;
     color: black ;
     padding-left: 0px ;
-   
-    
+
+
   }
-  
+
   .submenu2{
     position: absolute;
     left: 100%;
@@ -105,7 +112,7 @@
     top: 0px;
     background-color: rgb(242, 238, 238);
     display: none;
-    padding-left: 0px;
+    padding-left: 10px;
   }
   .submenu3{
     position: absolute;
@@ -114,11 +121,11 @@
     top: 0px;
     background-color: rgb(242, 238, 238);
     display: none;
-   padding-left: 0px;
+
   }
-  
-  
-  
+
+
+
   .menu li:hover > .submenu{
     display: block;
   }
@@ -128,4 +135,10 @@
   .submenu li:hover> .submenu3{
     display: block;
   }
-  
+
+.img-notif{
+ position :absolute;
+ top:20px;
+}
+
+

@@ -2,36 +2,21 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="Style/Body.css">
+        <title>Dashboard | Schoolyte</title>
+    </head>
 
-        <title>Login Page - Schoolyte</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');">
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-        <!-- Bootstrap -->
-        <link href="https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap');">
-
-        <!-- Main CSS-->
-        <link href="Style/Login.css" rel="stylesheet">
-
-           
-</html>
 
 @include('components.Header')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Style/Body.css">
-    <title>Dashboard</title>
-</head>
 @yield('Navbar')
 <body>
+    <div class="Main" style="min-height: 680vh;">
+    <div class="intro-top">
     <div class="intro">
         <div class="i-left">
             <div class="i-name">
@@ -44,6 +29,7 @@
         <div class="i-right">
             <img src="assets/Asset4.png" class='asset4' />
         </div>
+    </div>
         <div class="i-center">
             <span>VISI</span>
             <span>Dapatkan informasi dan akses berbagai kemudahan <br />
@@ -81,15 +67,15 @@
                 Ruang Kesehatan
             </div>
         </div>
-        
-       
+
+
         <div class='str'>
             <div class='name1'>
                 <span> STRUKTUR <br /> ORGANISASI</span>
 
                 <span>Lihat dan ketahui struktur organisasi <br /> terbaru</span>
             </div>
-            <button type="button" class="btn-str">Struktur Organisasi</button>
+            <a href={{ Route("Strukturorganisasi") }}><button  type="button" class="btn-str">Struktur Organisasi</button>
             <div class='i-right1'>
                 <img src="assets/struktur.png" />
             </div>
@@ -104,35 +90,35 @@
             <div class="column">
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
-                    <h3> 1350 </h3>   
+                    <h3> 1350 </h3>
                     <p> Siswa </p>
                 </div>
             </div>
             <div class="column">
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
-                    <h3> 40 </h3>   
+                    <h3> 40 </h3>
                     <p> Guru </p>
                 </div>
             </div>
             <div class="column">
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
-                    <h3> 15 </h3>   
+                    <h3> 15 </h3>
                     <p> Karyawan </p>
                 </div>
             </div>
             <div class="column">
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
-                    <h3> 3 </h3>   
+                    <h3> 3 </h3>
                     <p> Juruasan </p>
                 </div>
             </div>
             <div class="column">
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
-                    <h3> 12 </h3>   
+                    <h3> 12 </h3>
                     <p> Ekstrakulikuler </p>
                 </div>
             </div>
@@ -142,42 +128,22 @@
                 <img src="assets/ppdb.png"/>
             </div>
             <div class="textppdb">
-                <span>PPDB</span>
-                <span>Dapatkan informasi PPDB seputar <br/> siswa baru dan siswa mutasi</span>
+                <span>Ingin Menambahkan Berita?</span>
+                <span>Anda dapat menambahkan berita terbaru yang anda ketahui</span>
             </div>
-            <button type="button" class="btn-PPDB">informasi PPDB</button>
+            <a href={{route('Berita/Tambahberita')}}><button type="button" class="btn-PPDB">Tambah Berita</button></a>
+            <a href={{route('Berita/Beritasaya')}}><button type="button" class="btn-berita">Berita Saya</button></a>
         </div>
         <div class="activity">
             <h2>Log Activity</h2>
             <div class="activity-feed">
-                <div class="feed-item">
-                    <div class="date">Sep 25</div>
-                    <div class="text">Responded to need <a href="single-need.php">“Volunteer opportunity”</a></div>
-                </div>
-                <div class="feed-item">
-                    <div class="date">Sep 24</div>
-                    <div class="text">Added an interest “Volunteer Activities”</div>
-                </div>
-                <div class="feed-item">
-                    <div class="date">Sep 23</div>
-                    <div class="text">Joined the group <a href="single-group.php">“Boardsmanship Forum”</a></div>
-                </div>
-                <div class="feed-item">
-                    <div class="date">Sep 21</div>
-                    <div class="text">Responded to need <a href="single-need.php">“In-Kind Opportunity”</a></div>
-                </div>
-                <div class="feed-item">
-                    <div class="date">Sep 18</div>
-                    <div class="text">Created need <a href="single-need.php">“Volunteer Opportunity”</a></div>
-                </div>
-                <div class="feed-item">
-                    <div class="date">Sep 17</div>
-                    <div class="text">Attending the event <a href="single-event.php">“Some New Event”</a></div>
-                </div>
+
             </div>
         </div>
     </div>
+</div>
 </body>
+
 </html>
 @include('components.Footer')
 

@@ -2,12 +2,12 @@
     padding-top:33px;
     padding-bottom: 10px;
   }
-  
+
 .navbar-brand{
     position: absolute;
 width: 151px;
 height: 37px;
-left: 100px;
+left: 80px;
 top: 63px;
 
 }
@@ -19,11 +19,11 @@ top: 63px;
   }
 .menu-beranda{
     list-style: none;
-    padding-left: 885px;
+    padding-left: 850px;
     padding-top: 70px;
-    
+
 }
-  
+
 .navbar {
     z-index: 1;
     line-height: 18px;
@@ -48,20 +48,30 @@ top: 63px;
     text-decoration: none;
     color: black ;
     padding: 12px 25px ;
-    
-    
-    
+
+
+
 }
 
 .menu-beranda a:hover{
     color: blueviolet;
     cursor: pointer;
+
 }
+
+.menu-beranda a:hover{
+    color: blueviolet;
+    cursor: pointer;
+
+}
+
+
+
 .btn-login{
     position: absolute;
     width: 150px;
     height: 40px;
-    left: 1399px;
+    left: 1340px;
     top: 73px;
     background: #000000;
     border-radius: 50px;

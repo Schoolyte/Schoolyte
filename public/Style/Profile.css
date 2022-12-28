@@ -1,0 +1,129 @@
+.profile-base{
+    margin-bottom:900px;
+}
+.profile-base{
+position: absolute;
+width: 1200px;
+height: 500px;
+left: 139px;
+top: 290px;
+display: inline-block;
+padding:200px;
+
+background: #F6F6F6;
+border-radius: 15px;
+  }
+
+.title{
+    position: absolute;
+width: 280px;
+height: 44px;
+left: 139px;
+top: 219px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 44px;
+
+color: #000000;
+}
+
+.image-profile{
+    position: absolute;
+    display: inline-block;
+    width: 233px;
+    height: 233px;
+    left: 101px;
+    top: 69px;
+
+    border-radius: 200px;;
+}
+
+.biodata {
+    display: inline-block;
+    position: absolute;
+    top : 85px;
+    left:447px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 25px;
+/* identical to box height */
+
+
+color: #000000;
+}
+
+.text1{
+    position: absolute;
+width: 300px;
+height: 23px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+color: #000000;
+}
+
+
+.biodata td {
+    padding-bottom: 10px;
+}
+
+.button {
+    position: absolute;
+    width: 227px;
+    height: 40px;
+    left: 606px;
+    top: 670px;
+
+    background: #F24E1A;
+    border-radius: 10px;
+}
+
+.button-text {
+    position: absolute;
+width: 200px;
+height: 19px;
+left: 10px;
+top: 10px;
+
+font-family: 'Lato', sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.button-text:hover{
+    color: black;
+    cursor: pointer;
+}
+
+body{
+    position:relative;
+    padding-bottom:100px;
+
+}
+
+.indent{
+    top:800px;
+    position:absolute;
+    color:white;
+    }

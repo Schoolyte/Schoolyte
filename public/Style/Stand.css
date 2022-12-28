@@ -65,16 +65,16 @@
   .intro{
     position: absolute;
     width: 1377px;
-    height: 772px;
+    height: 688.5px;
     left: 71px;
-    top: 440px;
+    top: 442px;
   }
   .intro>:nth-child(2){
     position: absolute;
-    width: 597px;
+    width: 244px;
     height: 86px;
     left: 117px;
-    top: 277px;
+    top: 218px;
 
     font-family: 'Gilroy',sans-serif;
     font-style: normal;
@@ -86,49 +86,455 @@
 
     color: #FFFFFF;
   }
-  .intro>:nth-child(3){
-    position: absolute;
-    width: 581px;
-    height: 84px;
-    left: 117px;
-    top: 369px;
+.intro>:nth-child(3){
+  position: absolute;
+  width: 581px;
+  height: 126px;
+  left: 117px;
+  top: 310px;
 
-    font-family: 'Gilroy',sans-serif;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 42px;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 42px;
 
-    color: #FFFFFF;
-  }
-  .hiasan>:nth-child(1){
-    position: absolute;
-    width: 45px;
-    height: 46px;
-    left: 1120px;
-    top: 1218px;
+  color: #FFFFFF;
+}
+.saldo>:nth-child(1){
+  position: absolute;
+  width: 45px;
+  height: 46px;
+  left: 1120px;
+  top: 1218px;
+}
+.saldo>:nth-child(2){
+  position: absolute;
+  width: 129px;
+  height: 30px;
+  left: 1172px;
+  top: 1228px;
 
-  }
-  .hiasan>:nth-child(2){
-    position: absolute;
-width: 129px;
-height: 30px;
-left: 1172px;
-top: 1228px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+.navbartab{
+  position: absolute;
+  left: 104px;
+  top: 1312px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #ffffff;
+
+}
+
+
+.tab button {
+  background-color: #FFF;
+  width: 300px;
+  align-items: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: 'Gilroy',sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+
+.tab button:hover {
+  background-color: #F24E1A;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: 800;
+}
+
+.tab button.active {
+  background-color: #f9542271;
+  border-radius: 10px;
+  color: #FFF;
+  font-weight: 800;
+}
+
+.tabcontent {
+  display: none;
+  height: 180%;
+
+}
+.dapur1{
+position: absolute;
+width: 612px;
+height: 301px;
+top: 90px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.img-dapur{
+position: absolute;
+width: 229px;
+height: 229px;
+left: 39px;
+top: 29px;
+}
+.text1{
+position: absolute;
+width: 182px;
+height: 21.97px;
+left: 284px;
+top: 49.07px;
 
 font-family: 'Lato';
 font-style: normal;
-font-weight: 600;
+font-weight: 800;
 font-size: 25px;
 line-height: 30px;
+
+color: #000000;
+}
+.text2{
+position: absolute;
+width: 182px;
+height: 21.97px;
+left: 284px;
+top: 106px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 30px;
+
+color: #000000;
+}
+.text3{
+position: absolute;
+width: 300px;
+height: 21.97px;
+left: 284px;
+top: 146px;
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 30px;
+
+color: #000000;
+}
+.dapur2{
+position: absolute;
+width: 612px;
+height: 301px;
+left: 648px;
+top: 90px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.dapur3{
+position: absolute;
+width: 612px;
+height: 301px;
+top: 422px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.dapur4{
+position: absolute;
+width: 612px;
+height: 301px;
+left: 648px;
+top: 422px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.dapur5{
+position: absolute;
+width: 612px;
+height: 301px;
+top: 752px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.dapur6{
+position: absolute;
+width: 612px;
+height: 301px;
+left: 648px;
+top: 752px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.dapur7{
+position: absolute;
+width: 612px;
+height: 301px;
+top: 1085px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.pesanan1{
+  position: absolute;
+width: 941px;
+height: 319px;
+top: 90px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+}
+.t1{
+  position: absolute;
+  width: 314px;
+  height: 22px;
+  left: 40px;
+  top: 16px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 31px;
+
+  color: #4C5161;
+
+}
+.t2{
+  position: absolute;
+width: 209px;
+height: 28px;
+left: 40px;
+top: 47px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
 /* identical to box height */
 
 
+color: #4C5161;
+}
+.id{
+  position: absolute;
+width: 130px;
+height: 29px;
+left: 770px;
+top: 16px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 29px;
+text-align: right;
+
+color: #4C5161;
+}
+.tanggal{
+  position: absolute;
+width: 238px;
+height: 28px;
+left: 662px;
+top: 47px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height */
+
+text-align: right;
+
+color: #4C5161;
+}
+.pesanan{
+  position: absolute;
+width: 100px;
+height: 100px;
+left: 40px;
+top: 117px;
+}
+.kode{
+  position: absolute;
+width: 314px;
+height: 22px;
+left: 163px;
+top: 117px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
+
 color: #000000;
-  }
+}
+.minuman{
+  position: absolute;
+width: 314px;
+height: 22px;
+left: 163px;
+top: 151px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+}
+.makanan{
+  position: absolute;
+  width: 314px;
+  height: 22px;
+  left: 163px;
+  top: 177px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+.hg-minum{
+  position: absolute;
+width: 99px;
+height: 22px;
+left: 779px;
+top: 151px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 23px;
+
+color: #000000;
+}
+.hg-makan{
+  position: absolute;
+  width: 314px;
+  height: 22px;
+  left: 779px;
+  top: 177px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+
+  color: #000000;
+}
+.total{
+  position: absolute;
+width: 314px;
+height: 22px;
+left: 33px;
+top: 264px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
+
+color: #000000;
+
+}
+.btn-primary{
+  position: absolute;
+width: 159px;
+height: 41px;
+left: 741px;
+top: 259px;
+border: none;
+background: #F24E1A;
+border-radius: 25px;
+font-family: 'Gilroy',sans-serif;
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
 
 
-.Main{
-  min-height: 170vh;
+color: #FFFFFF;
+
+}
+.btn-primary:hover{
+  cursor: pointer;
+  background-color: rgb(127, 72, 50);
+}
+.pesanan2{
+  position: absolute;
+width: 941px;
+height: 319px;
+top: 456px;
+
+background: #F6F6F6;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+}
+.wallet{
+  position: absolute;
+width: 40px;
+height: 40px;
+left: 732px;
+top: 258px;
+}
+.nominal{
+  position: absolute;
+width: 130px;
+height: 31px;
+left: 770px;
+top: 263px;
+
+font-family: 'Gilroy';
+font-style: normal;
+font-weight: 800;
+font-size: 25px;
+line-height: 31px;
+/* identical to box height */
+
+text-align: right;
+
+color: #F24E1A;
 
 }

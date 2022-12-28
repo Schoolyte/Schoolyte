@@ -27,8 +27,8 @@
             <span>• Nilai terdiri dari nilai tugas hingga nilai ujian</span>
         </div>
         <div class="penilaian-place">
-        <div class="pagination-jadwal">
-            <table id="example" class="display" style=" width: 1230px;height: 820px; " >
+        <div class="pagination-jadwal" id="tabel-penilaian">
+            <table id="example" class="display" style=" width: 850px;height: 800px; " >
                 <thead>
                     <tr>
                         <th>N0</th>
@@ -206,10 +206,10 @@
           </button>
           <div class="content4 dropdown-content">
               <div class="content">
-                <li><a href="#">X MIPA 1</a></li>
-                <li><a href="#">X MIPA 2</a></li>
-                <li><a href="#">X IPS 1</a></li>
-                <li><a href="#">X IPS 2</a></li>
+                <li><a href="#tabel-penilaian">X MIPA 1</a></li>
+                <li><a href="#tabel-penilaian">X MIPA 2</a></li>
+                <li><a href="#tabel-penilaian">X IPS 1</a></li>
+                <li><a href="#tabel-penilaian">X IPS 2</a></li>
               </div>  
             </div>
           </div>
@@ -220,10 +220,10 @@
           </button>
           <div class="content5 dropdown-content">
               <div class="content">
-                <li><a href="#">XI MIPA 1</a></li>
-                <li><a href="#">XI MIPA 2</a></li>
-                <li><a href="#">XI IPS 1</a></li>
-                <li><a href="#">XI IPS 2</a></li>
+                <li><a href="#tabel-penilaian">XI MIPA 1</a></li>
+                <li><a href="#tabel-penilaian">XI MIPA 2</a></li>
+                <li><a href="#tabel-penilaian">XI IPS 1</a></li>
+                <li><a href="#tabel-penilaian">XI IPS 2</a></li>
               </div>  
             </div>
           </div>
@@ -234,10 +234,10 @@
           </button>
           <div class="content3 dropdown-content">
               <div class="content">
-                <li><a href="#">XII MIPA 1</a></li>
-                <li><a href="#">XII MIPA 2</a></li>
-                <li><a href="#">XII IPS 1</a></li>
-                <li><a href="#">XII IPS 2</a></li>
+                <li><a href="#tabel-penilaian">XII MIPA 1</a></li>
+                <li><a href="#tabel-penilaian">XII MIPA 2</a></li>
+                <li><a href="#tabel-penilaian">XII IPS 1</a></li>
+                <li><a href="#tabel-penilaian">XII IPS 2</a></li>
               </div>  
             </div>
           </div>
