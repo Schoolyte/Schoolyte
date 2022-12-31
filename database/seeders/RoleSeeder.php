@@ -32,7 +32,6 @@ class RoleSeeder extends Seeder
                 'name' => $value['name'],
                 'created_at' => Carbon::now(),
                 'updated_at' => Carbon::now()
-
             ]);
         }
 

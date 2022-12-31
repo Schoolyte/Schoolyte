@@ -24,7 +24,7 @@
                     <div class="slideshow-container">
 
                         <div class="mySlides fade">
-                            <a href="#"  style="text-decoration: none;">
+                            <a href={{ Route('Berita/Hal_utama') }}  style="text-decoration: none;">
                                 <img src="/assets/MPLS 2.png" style="width:100%">
                                 <div class="judul">Pembukaan kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS)</div>
                                 <div class="text">Selasa 19 Juli 2022 Mengawali Kegiatan MPLS pada Hari Ini Seluruh Peserta Didik Baru dan Para Dewan Guru Serta Pengurus OSIS SMA Negeri Ngoro Menggelar Apel .........
@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="mySlides fade">
-                            <a href="#" style="text-decoration: none;">
+                            <a href={{ Route('Berita/Hal_utama') }} style="text-decoration: none;">
                                 <img src="/assets/MPLS 2.png" style="width:100%">
                                 <div class="judul">Pembukaan kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS)</div>
                                 <div class="text">Selasa 19 Juli 2022 Mengawali Kegiatan MPLS pada Hari Ini Seluruh Peserta Didik Baru dan Para Dewan Guru Serta Pengurus OSIS SMA Negeri Ngoro Menggelar Apel .........
@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="mySlides fade">
-                            <a href="#"  style="text-decoration: none;">
+                            <a href={{ Route('Berita/Hal_utama') }}  style="text-decoration: none;">
                                 <img src="/assets/MPLS 2.png" style="width:100%">
                                 <div class="judul">Pembukaan kegiatan Masa Pengenalan Lingkungan Sekolah (MPLS)</div>
                                 <div class="text">Selasa 19 Juli 2022 Mengawali Kegiatan MPLS pada Hari Ini Seluruh Peserta Didik Baru dan Para Dewan Guru Serta Pengurus OSIS SMA Negeri Ngoro Menggelar Apel .........

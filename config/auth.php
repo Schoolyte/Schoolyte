@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
+        'guard' => 'siswa',
+        'passwords' => 'siswas',
     ],
 
     /*
@@ -36,9 +36,21 @@ return [
     */
 
     'guards' => [
-        'web' => [
+        'siswa' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'siswas',
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        'guru' => [
+            'driver' => 'session',
+            'provider' => 'gurus',
+        ],
+        'walisiswa' => [
+            'driver' => 'session',
+            'provider' => 'walisiswas',
         ],
     ],
 
@@ -60,9 +72,21 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'siswas' => [
             'driver' => 'eloquent',
-            'model' => App\Models\User::class,
+            'model' => App\Models\Siswa::class,
+        ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
+        'gurus' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Guru::class,
+        ],
+        'walisiswas' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\WaliSiswa::class,
         ],
 
         // 'users' => [
@@ -87,8 +111,26 @@ return [
     */
 
     'passwords' => [
-        'users' => [
-            'provider' => 'users',
+        'siswas' => [
+            'provider' => 'siswas',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'admins' => [
+            'provider' => 'admins',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'gurus' => [
+            'provider' => 'gurus',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'walisiswas' => [
+            'provider' => 'walisiswas',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

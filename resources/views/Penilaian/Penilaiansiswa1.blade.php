@@ -13,188 +13,161 @@
     crossorigin="anonymous"></script>
     <title>Penilaian Pembelajaran | Schoolyte</title>
     <link rel="stylesheet" href={{ asset("Style/Penilaiansiswa1.css") }}>
+    <style>
+      .table {
+        top: auto;
+        position: relative;
+        left: auto;
+        width: auto;
+        height: auto;
+      }
+    </style>
 </head>
 <body>
   @yield('Navbar')
     <div class="page-penilaian" style="min-height: 300vh;">
-        <div class="tittle-page">
-          <span>Penilaian Pembelajaran</span>
-          <ul class="breadcrumb">
-            <li><a href="#">Akademik</a></li>
-            <li>Penilaian Pembelajaran</li>
-          </ul>
-        </div>
-        <div class="identitas-siswa">
-          <img src="/assets/img-siswa.png">
-          <h1>Novi Rosidhatul Aulia</h1>
-          <span>X MIPA 1</span>
-        </div>
-        <div class="Penilaian-place" id="penilaian">
-          <div class="dropdown">
-            <button class="dropbtn1">Semester Ganjil <br/>Pantau nilai tugas hingga nilai ujianmu di semester ganjil
-              <i class="fa fa-caret-down"></i>
-            </button>
-
-            <div class="content1 dropdown-content">
-
-              <div class="row">
-                <div class="column">
-                  <a href="#tabs">Matematika</a>
-                  <a href="#tabs">IPA</a>
-                  <a href="#tabs">Bhs. Inggris</a>
-                </div>
-                <div class="column">
-
-                  <a href="#tabs">Biologi</a>
-                  <a href="#tabs">Bhs. indonesia</a>
-                  <a href="#tabs">Pendidikan Agama</a>
-                </div>
-                <div class="column">
-
-                  <a href="#tabs">Penjas</a>
-                  <a href="#tabs">TIK</a>
-                  <a href="#tabs">PPKN</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="navtabs" id="tabs">
-            <ul class="nav nav-tabs ">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" id="home-tab" type="button"
-                    data-bs-target="#home" role="tab" aria-controls="home" aria-selected="true">Pengetahuan</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" id="profile-tab" type="button"
-                    data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="true">Keterampilan</button>
-                </li>
-
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show" role="tabpanel" id="home" aria-labelledby="home-tab">
-                    <table class="table table-hover">
-                        <thead class="thead-dark">
-                          <tr>
-
-                            <th scope="col">Kategori</th>
-                            <th scope="col">Nilai</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Tugas 1</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">Tugas 2</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">Tugas 3</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">UTS</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">UAS</th>
-                            <th scope="row"></th>
-                          </tr>
-                        </tbody>
-                        <thead class="thead-dark">
-                          <tr>
-
-                            <th scope="col">Rata - rata</th>
-                            <th scope="col"></th>
-
-                          </tr>
-                        </thead>
-                      </table>
-                </div>
-                <div class="tab-pane fade show" role="tabpanel" id="profile" aria-labelledby="profile-tab">
-                    <table class="table table-hover" >
-                        <thead class="thead">
-                          <tr>
-
-                            <th scope="col">Kategori</th>
-                            <th scope="col">Nilai</th>
-
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Tugas 1</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">Tugas 2</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">Tugas 3</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">UTS</th>
-                            <th scope="row"></th>
-                          </tr>
-                          <tr>
-                            <th scope="row">UAS</th>
-                            <th scope="row"></th>
-                          </tr>
-                        </tbody>
-                        <thead class="thead-dark">
-                          <tr>
-
-                            <th scope="col">Rata - rata</th>
-                            <th scope="col"></th>
-
-                          </tr>
-                        </thead>
-                      </table>
-                </div>
-
-            </div>
-        </div>
-          <div class="dropdown">
-            <button class="dropbtn2">Semester Genap <br/>Pantau nilai tugas hingga nilai ujianmu di semester Genap
-              <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="content2 dropdown-content">
-
-              <div class="row">
-                <div class="column">
-                  <a href="#tabs">Matematika</a>
-                  <a href="#tabs">IPA</a>
-                  <a href="#tabs">Bhs. Inggris</a>
-                </div>
-                <div class="column">
-
-                  <a href="#tabs">Biologi</a>
-                  <a href="#tabs">Bhs. indonesia</a>
-                  <a href="#tabs">Pendidikan Agama</a>
-                </div>
-                <div class="column">
-
-                  <a href="#tabs">Penjas</a>
-                  <a href="#tabs">TIK</a>
-                  <a href="#tabs">PPKN</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-        <img class="icon-btn1" src="/assets/School Building.png" width="35" height="35" padding="5" />
-        <button type="button" class="btn-kelas-X"> &nbsp; Kelas X</button>
-        <img class="icon-btn2"src="/assets/School Building.png"  width="35" height="35"/>
-        <button type="button" class="btn-kelas-XI"> &nbsp; Kelas XII</button>
-        <img class="icon-btn3" src="/assets/School Building.png" width="35" height="35"/>
-        <button type="button" class="btn-kelas-XII"> &nbsp; Kelas XII</button>
+      <div class="tittle-page">
+        <span>Penilaian Pembelajaran</span>
+        <ul class="breadcrumb">
+          <li><a href="#">Akademik</a></li>
+          <li>Penilaian Pembelajaran</li>
+        </ul>
       </div>
+      <div class="identitas-siswa">
+        <img src="/assets/img-siswa.png">
+        <h1>{{ $siswa->nama }}</h1>
+        <span>{{ $siswa->kelas->nama_kelas }}</span>
+      </div>
+
+      <div class="Penilaian-place" id="penilaian">
+        <div style="position: relative; width: 100%; padding: 3rem;">
+          <div class="fs-2 mb-4">
+            Semester 1
+          </div>
+          <div class="fs-4 mb-4">
+            Nilai
+          </div>
+          <table class="table table-hover" style="width: 100%;">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Mata Pelajaran</th>
+              <th scope="col">Tugas 1</th>
+              <th scope="col">Tugas 2</th>
+              <th scope="col">Tugas 3</th>
+              <th scope="col">UTS</th>
+              <th scope="col">UAS</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($nilaiS1 as $item)
+                    <tr>
+                        <td>{{ $item->mapel->mapel }}</td>
+                        <td>{{ $item->tugas1 }}</td>
+                        <td>{{ $item->tugas2 }}</td>
+                        <td>{{ $item->tugas3 }}</td>
+                        <td>{{ $item->uts }}</td>
+                        <td>{{ $item->uas }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+          </table>
+
+          <div class="fs-4 mb-4">
+            Keterampilan
+          </div>
+          <table class="table table-hover" style="width: 100%;">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Mata Pelajaran</th>
+              <th scope="col">Tugas 1</th>
+              <th scope="col">Tugas 2</th>
+              <th scope="col">Tugas 3</th>
+              <th scope="col">Praktikum 1</th>
+              <th scope="col">Praktikum 2</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($nilaiS1P as $item)
+                    <tr>
+                        <td>{{ $item->mapel->mapel }}</td>
+                        <td>{{ $item->tugas1 }}</td>
+                        <td>{{ $item->tugas2 }}</td>
+                        <td>{{ $item->tugas3 }}</td>
+                        <td>{{ $item->praktikum1 }}</td>
+                        <td>{{ $item->praktikum2 }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+          </table>
+
+          <div class="fs-2 mb-4">
+            Semester 2
+          </div>
+          <div class="fs-4 mb-4">
+            Nilai
+          </div>
+          <table class="table table-hover" style="width: 100%;">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Mata Pelajaran</th>
+              <th scope="col">Tugas 1</th>
+              <th scope="col">Tugas 2</th>
+              <th scope="col">Tugas 3</th>
+              <th scope="col">UTS</th>
+              <th scope="col">UAS</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($nilaiS2 as $item)
+                    <tr>
+                        <td>{{ $item->mapel->mapel }}</td>
+                        <td>{{ $item->tugas1 }}</td>
+                        <td>{{ $item->tugas2 }}</td>
+                        <td>{{ $item->tugas3 }}</td>
+                        <td>{{ $item->uts }}</td>
+                        <td>{{ $item->uas }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+          </table>
+
+          <div class="fs-4 mb-4">
+            Keterampilan
+          </div>
+          <table class="table table-hover" style="width: 100%;">
+            <thead class="thead-dark">
+            <tr>
+              <th scope="col">Mata Pelajaran</th>
+              <th scope="col">Tugas 1</th>
+              <th scope="col">Tugas 2</th>
+              <th scope="col">Tugas 3</th>
+              <th scope="col">Praktikum 1</th>
+              <th scope="col">Praktikum 2</th>
+            </tr>
+            </thead>
+            <tbody>
+                @foreach ($nilaiS2P as $item)
+                    <tr>
+                        <td>{{ $item->mapel->mapel }}</td>
+                        <td>{{ $item->tugas1 }}</td>
+                        <td>{{ $item->tugas2 }}</td>
+                        <td>{{ $item->tugas3 }}</td>
+                        <td>{{ $item->praktikum1 }}</td>
+                        <td>{{ $item->praktikum2 }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      @foreach ($arrKelas as $kelas)
+        <div>
+            <img class="icon-btn1" src="/assets/School Building.png" width="35" height="35" padding="5" style="position: relative"/>
+            <a href="?kelasId={{ $kelas->id }}" type="button" class="btn-kelas-X" style="position: relative; text-decoration: none"> &nbsp; {{ $kelas->nama_kelas }}</a>
+        </div>
+      @endforeach
+    </div>
 </body>
 </html>
 @include('components.Footer')

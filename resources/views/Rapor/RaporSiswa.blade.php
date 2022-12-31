@@ -18,28 +18,26 @@
             <ul class="breadcrumb">
                 <li><a href="#">Akademik</a></li>
                 <li><a href="#">Rapor</a></li>
-                <li>Novi Rosidhatul Aulia</li>
+                <li>{{ (Auth::guard('siswa')->user() ?? Auth::guard('walisiswa')->user()->siswa)->kelas->nama_kelas }}</li>
               </ul>
         </div>
         <div class="identitas">
-            <img src="/assets/img-siswa.png"/>
-            <h5>Novi Rosidhatul Aulia</h5>
-            <h1>X MIPA 1</h1>
+            <img src="/assets/img-siswa.png">
+            <h1>{{ (Auth::guard('siswa')->user() ?? Auth::guard('walisiswa')->user()->siswa)->nama }}</h1>
+            <span>{{ (Auth::guard('siswa')->user() ?? Auth::guard('walisiswa')->user()->siswa)->kelas->nama_kelas }}</span>
         </div>
         <div class="warning">
             <span>Pantau hasil belajarmu di rapot tiap semester!</span>
             <span>• Anda dapat memantau nilai belajar setiap tingkatan kelas yang terbagi dalam rapot tiap seemester</span>
         </div>
         <div class="rapor-place" id="rapor-siswa">
-            <a href={{route('Rapor/RaporSiswa/RaporGanjil')}}>
+            <a href={{route('Rapor/RaporSiswa/RaporGanjil', ['kelasId' => @$_GET['kelasId'] ?? @$arrIdKelas[0] ?? ''])}}>
             <div class="rapor-ganjil" >
-
                 <img src="/assets/Document.png"/>
                 <span>Rapor Semester Ganjil</span>
-
             </div>
             </a>
-            <a href={{route('Rapor/RaporSiswa/RaporGenap')}}>
+            <a href={{route('Rapor/RaporSiswa/RaporGenap', ['kelasId' => @$_GET['kelasId'] ?? @$arrIdKelas[0] ?? ''])}}>
             <div class="rapor-genap" >
                 <img src="/assets/Document.png"/>
                 <span>Rapor Semester Genap</span>
@@ -47,12 +45,15 @@
             </a>
 
         </div>
-        <img src="/assets/School Building.png" class="icon-btn1"/>
-        <a href="#rapor-siswa"><button type="button" class="btn-kelas-X" >&nbsp;Kelas X</button></a>
-        <img src="/assets/School Building.png" class="icon-btn2"/>
-        <a href="#rapor-siswa"><button type="button" class="btn-kelas-XI" >&nbsp;Kelas XI</button></a>
-        <img src="/assets/School Building.png" class="icon-btn3"/>
-        <a href="#rapor-siswa"><button type="button" class="btn-kelas-XII" >&nbsp;Kelas XII</button></a>
+
+        {{-- arrKelas --}}
+
+        @foreach ($arrKelas as $kelas)
+          <div style="position: relative;">
+                <img src="/assets/School Building.png" class="icon-btn1" style="position: relative;"/>
+                <a href="?kelasId={{ $kelas->id }}"><button type="button" class="btn-kelas-X" style="position: relative;">&nbsp;{{ $kelas->nama_kelas }}</button></a>
+          </div>
+        @endforeach
 
     </div>
 </body>

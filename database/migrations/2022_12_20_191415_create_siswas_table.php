@@ -16,13 +16,14 @@ return new class extends Migration
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('kelas_id');
-            $table->string('email_siswa',50)->unique();
-            $table->string('pass_siswa', 10);
-            $table->string('nama_siswa');
+            $table->foreignId('eksternal_id');
+            $table->string('email',50)->unique();
+            $table->string('pass', 10);
+            $table->string('nama');
             $table->integer('no_absen');
             $table->string('alamat');
-            $table->string('tlpn_siswa');
-            $table->integer('no_induk');
+            $table->string('tlpn');
+            $table->integer('nis');
             $table->char('jenis_kelamin',2);
             $table->string('tempat_lahir');
             $table->string('tgl_lahir');

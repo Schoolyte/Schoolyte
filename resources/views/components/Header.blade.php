@@ -23,25 +23,56 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="menu">
           <li><a href={{ route('Dashboard') }} class="active">Dashboard</a></li>
-          <li><a href="#"> Akademik </a>
-            <ul class="submenu">
-              <li><a href={{route('Jadwal/JadwalKelas')}}>Jadwal Kelas</a> <hr class="break"></li>
-              <li><a href="#">Absensi Kehadiran</a>
-                <hr>
-              <li><a href={{ route('Penilaian/Penilaiansiswa1')}}>Penilaian Pembelajaran</a> <hr class="break"></li>
+          @auth('siswa')
+            <li><a href="#"> Akademik </a>
+                <ul class="submenu">
+                <li><a href={{route('Jadwal/JadwalKelas')}}>Jadwal Kelas</a> <hr class="break"></li>
+                <li><a href={{route('Absen/Absensiswa')}}>Absensi Kehadiran</a>
+                    <hr>
+                <li><a href={{ route('Penilaian/Penilaiansiswa1')}}>Penilaian Pembelajaran</a> <hr class="break"></li>
 
 
-              <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor</a> <hr class="break"></li>
-              <li><a href={{ route('Mutasi/MutasiKeluar') }}>Mutasi</a> </li>
-            </ul>
-          </li>
+                <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor</a> <hr class="break"></li>
+                <li><a href={{ route('Mutasi/MutasiKeluar') }}>Mutasi</a> </li>
+                </ul>
+            </li>
+          @endauth
+          @auth('admin')
+            <li>
+                <a href="#">Admin Menu</a>
+                <ul class="submenu">
+                    <li><a href={{route('admin.dashboard.crud-guru.index')}}>Guru</a>  <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-kelas.index')}}>Kelas</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-mapel.index')}}>Mapel</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-jadwal.index')}}>Jadwal</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-siswa.index')}}>Siswa</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-wali.index')}}>Walisiswa</a> <hr class="break"></li>
+                </ul>
+            </li>
+          @endauth
+          @auth('guru')
+            <li>
+                <a href="#">Guru Menu</a>
+                <ul class="submenu">
+                    <li><a href={{route('guru.dashboard.crud-nilai.index')}}>Input Nilai</a>  <hr class="break"></li>
+                </ul>
+            </li>
+          @endauth
+          @auth('walisiswa')
+            <li>
+                <a href="#">Walisiswa Menu</a>
+                <ul class="submenu">
+                    <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor Siswa</a>  <hr class="break"></li>
+                </ul>
+            </li>
+          @endauth
           <li><a href="#">Peminjaman</a>
               <ul class="submenu">
                 <li><a href="#">Perpustakaan</a> <hr class="break"></li>
                 <li><a href="#">Fasilitas</a>
                     <ul class="submenu2">
                       <li><a href={{ route('Fasilitas/DaftarFasilitas') }}>Daftar Fasilitas</a> <hr class="break"></li>
-                      <li><a href=>Peminjaman Fasilitas</a></li>
+                      <li><a href={{ route('Fasilitas/Formpinjam') }}>Peminjaman Fasilitas</a></li>
                     </ul>
                 </li>
               </ul>
@@ -84,7 +115,7 @@
           </a>
               <ul class="submenu" bg="dark">
                 <li><a href={{ route('Profile/Profile') }}>Profile Saya</a> <hr class="break" ></li>
-                <li><a href={{ route('Beranda/Beranda') }}>Logout</a></li>
+                <li><a href={{ route('logout') }}>Logout</a></li>
               </ul>
           </li>
         </ul>

@@ -29,12 +29,12 @@
                     <div  class="label">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label-ID">E-mail</label>
-                        <input type="text" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan E-mail anda">
+                        <input type="text" name="id" class="form-controlx" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan E-mail anda" required value="admin@example.com">
                         <div id="emailHelp" class="form-text" ></div>
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label-PW">Password</label>
-                        <input type="password" name="password" class="form-controly" id="exampleInputPassword1" maxlength="8"  placeholder="Masukkan password anda">
+                        <input type="password" name="password" class="form-controly" id="exampleInputPassword1" maxlength="8"  placeholder="Masukkan password anda" required value="password">
                         <div id="emailHelp" class="form-text" ></div>
                     </div>
                     </div>

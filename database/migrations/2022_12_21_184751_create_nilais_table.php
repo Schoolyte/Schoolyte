@@ -15,14 +15,16 @@ return new class extends Migration
     {
         Schema::create('nilais', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('siswa_id')->unique();
-            $table->foreignId('mapel_id')->unique();
-            $table->foreignId('kelas_id')->unique();
+            $table->foreignId('siswa_id');
+            $table->foreignId('mapel_id');
+            $table->foreignId('kelas_id');
             $table->integer('tugas1');
             $table->integer('tugas2');
             $table->integer('tugas3');
             $table->integer('uts');
             $table->integer('uas');
+            $table->integer('rata2');
+            $table->integer('semester');
             $table->softDeletes();
             $table->timestamps();
         });

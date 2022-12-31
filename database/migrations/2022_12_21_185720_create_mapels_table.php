@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('mapels', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('guru_id');
             $table->string('mapel');
             $table->softDeletes();
             $table->timestamps();

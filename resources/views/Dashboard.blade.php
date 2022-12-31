@@ -112,7 +112,7 @@
                 <div class="block">
                     <p><img src="assets/people.png"/></p>
                     <h3> 3 </h3>
-                    <p> Juruasan </p>
+                    <p> Jurusan </p>
                 </div>
             </div>
             <div class="column">

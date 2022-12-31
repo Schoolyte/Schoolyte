@@ -15,6 +15,20 @@ return new class extends Migration
     {
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
+            $table->string('email',50)->unique();
+            $table->string('pass');
+            $table->string('nama');
+            $table->text('alamat');
+            $table->integer('tlpn');
+            $table->integer('nip');
+            $table->char('jenis_kelamin',2);
+            $table->string('tempat_lahir');
+            $table->string('tgl_lahir');
+            $table->string('agama', 10);
+            $table->integer('saldo');
+            $table->char('status');
+            $table->string('image');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

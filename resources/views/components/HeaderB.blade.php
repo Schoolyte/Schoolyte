@@ -15,7 +15,7 @@
         <div class="container-fluidB">
         <a class="navbar-brand" href="#">
 
-        <img src="assets/logo1.png" class="Logo-img"  alt="logo" style="width: 151px;height: 37px; top: 63px;"/>
+        <img src={{ asset("assets/logo1.png") }} class="Logo-img"  alt="logo" style="width: 151px;height: 37px; top: 63px;"/>
         </a>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">

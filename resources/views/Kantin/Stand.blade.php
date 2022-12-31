@@ -37,7 +37,7 @@
 
         <div id="Tab1" class="tabcontent show active">
             <div class="dapur1">
-                <a href="#">
+                <a href={{route('Kantin/Menu')}}>
                 <img src="/assets/image 3.png" alt="" class="img-dapur">
                 <span class="text1">Dapur Bu Dewi</span>
                 <span class="text2">kode : 01</span>
@@ -45,7 +45,7 @@
                 </a>
             </div>
             <div class="dapur2">
-                <a href="#">
+                <a href={{route('Kantin/Menu')}}>
                 <img src="/assets/image 3.png" alt="" class="img-dapur">
                 <span class="text1">Dapur Bu Dewi</span>
                 <span class="text2">kode : 01</span>

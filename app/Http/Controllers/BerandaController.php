@@ -11,4 +11,10 @@ class BerandaController extends Controller
     {
         return view('Beranda.Beranda');
     }
+
+    public function berita()
+    {
+        return view('Berita.Hal_utama');
+    }
+
 }
