@@ -8,15 +8,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class PeminjamanBuku extends Model
 {
-    use SoftDeletes;
     protected $table = 'peminjaman_bukus';
     protected $fillable = [
-            'siswa_id',
-            'buku_id',
-            'tgl_pinjam',
-            'wkt_pinjam',
-            'tgl_kembali',
-            'wkt_kembali',
-            'jumlah'
+        'siswa_id',
+        'buku_id',
+        'tgl_pinjam',
+        'tgl_kembali',
+        'jumlah',
+        'pengembalian',
+        'telat',
+        'status',
+        'sanksi'
     ];
 }

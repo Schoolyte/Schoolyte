@@ -41,7 +41,7 @@ class CrudSiswaController extends Controller
     {
         Siswa::create([
             'kelas_id' => $request->kelas_id,
-            'eksternal_id' => 0,
+            'eksternal_id' => 4,
             'email' => $request->email,
             'pass' => $request->pass,
             'nama' => $request->nama,

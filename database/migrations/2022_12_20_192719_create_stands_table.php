@@ -19,7 +19,9 @@ return new class extends Migration
             $table->string('jenis_stand');
             $table->integer('kode_stand');
             $table->string('barcode_stand');
+            $table->string('p_kantin_id');
             $table->string('image');
+            $table->integer('saldo')->default(0);
             $table->softDeletes();
             $table->timestamps();
         });

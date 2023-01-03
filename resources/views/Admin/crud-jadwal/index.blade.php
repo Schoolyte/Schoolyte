@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jadwal | Schoolyte</title>
+    <title>Jadwal Kelas | Schoolyte</title>
     <link rel="stylesheet" href={{ asset("Style/Munculrapor.css") }}>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
@@ -37,18 +37,18 @@
 <body>
     <div class="view-rapor">
         <div class="page-tittle1">
-            <h5 class="tittle1">Crud Jadwal </h5>
+            <h5 class="tittle1">Jadwal Kelas</h5>
             <ul class="breadcrumb">
                 <li><a href="#">Admin</a></li>
-                <li><a href="">Crud Jadwal</a></li>
+                <li><a href="">Jadwal Kelas</a></li>
               </ul>
         </div>
-        <div class="section-card" style="top: 600px;">
+        <div class="section-card" style="top: 500px; left:250px">
             <div style="position: relative; width: 100%; padding: 3rem;">
                 <div>
-                    <a href="{{ route('admin.dashboard.crud-jadwal.create') }}" class="btn btn-primary">Tambah</a>
+                    <a href="{{ route('admin.dashboard.crud-jadwal.create') }}" class="btn btn-primary" style="margin-bottom:20px;background-color:#F24E1A ;border:none">Tambah</a>
                 </div>
-                <table class="table table-hover" style="width: 100%;">
+                <table class="table table-hover" style="width: 100%; text-align:center">
                     <thead class="thead-dark">
                     <tr>
                         <th scope="col">ID</th>
@@ -58,7 +58,7 @@
                         <th scope="col">Hari</th>
                         <th scope="col">Jam</th>
 
-                        <th scope="col">...</th>
+                        <th scope="col">Action</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -72,7 +72,7 @@
                             <td>{{ $item->jam }}</td>
                             <td>
                                 <div class="d-flex gap-2">
-                                    <a href="{{ route('admin.dashboard.crud-jadwal.edit', [$item->id]) }}" class="btn btn-warning">Edit</a>
+                                    <a href="{{ route('admin.dashboard.crud-jadwal.edit', [$item->id]) }}" class="btn btn-warning" style="margin-left:70px">Edit</a>
                                     <form action="{{ route('admin.dashboard.crud-jadwal.destroy', [$item->id]) }}" method="POST">
                                         @csrf
                                         @method('DELETE')

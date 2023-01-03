@@ -4,10 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use App\Models\Guru;
+use App\Models\Pegawai;
+use App\Models\PegawaiKantin;
 use App\Models\Siswa;
 use App\Models\User;
 use App\Models\WaliSiswa;
 use Illuminate\Http\Request;
+use App\Models\PegawaiPerpustakaan;
+
 use Auth;
 
 class LoginController extends Controller
@@ -52,6 +56,35 @@ class LoginController extends Controller
             }
         }
 
+        // search pegawai
+        $pegawai = Pegawai::where('email', $request->id)->first();
+        if($pegawai){
+            if($pegawai->pass == $request->password) {
+                Auth::guard('pegawai')->login($pegawai);
+                return redirect()->route('Dashboard');
+            }
+        }
+
+        // search pegawai kantin
+        $pegawaikantin = PegawaiKantin::where('email', $request->id)->first();
+        if($pegawaikantin){
+            if($pegawaikantin->pass == $request->password) {
+                Auth::guard('pegawaikantin')->login($pegawaikantin);
+                return redirect()->route('Dashboard');
+            }
+        }
+
+
+
+        // search Pegawai Perpus
+        $pegawaiPerpus = PegawaiPerpustakaan::where('email', $request->id)->first();
+        if ($pegawaiPerpus) {
+            if ($pegawaiPerpus->pass == $request->password) {
+                Auth::guard('pegawaiPerpus')->login($pegawaiPerpus);
+                return redirect()->route('Dashboard');
+            }
+        }
+
         return redirect()->route('Login')->with('error', 'Email atau Password salah');
     }
 
@@ -67,6 +100,12 @@ class LoginController extends Controller
         } catch (\Throwable $th) {}
         try {
             Auth::guard('walisiswa')->logout();
+        } catch (\Throwable $th) {}
+        try {
+            Auth::guard('pegawai')->logout();
+        } catch (\Throwable $th) {}
+        try {
+            Auth::guard('pegawaikantin')->logout();
         } catch (\Throwable $th) {}
     }
 

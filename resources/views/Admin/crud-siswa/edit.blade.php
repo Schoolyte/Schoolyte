@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edit Guru | Schoolyte</title>
+    <title>Edit Siswa | Schoolyte</title>
     <link rel="stylesheet" href={{ asset("Style/Munculrapor.css") }}>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
@@ -29,11 +29,11 @@
             <h5 class="tittle1">Edit Siswa </h5>
             <ul class="breadcrumb">
                 <li><a href="#">Admin</a></li>
-                <li><a href="">Crud Siswa</a></li>
+                <li><a href="">Siswa</a></li>
                 <li><a href="">Tambah</a></li>
               </ul>
         </div>
-        <div class="section-card" style="top: 600px;">
+        <div class="section-card" style="top: 500px; left:250px">
             <div style="position: relative; width: 100%; padding: 3rem;">
                 <form action="{{ route('admin.dashboard.crud-siswa.update', [$siswa->id]) }}" method="POST" class="p-4">
                     @csrf
@@ -47,43 +47,43 @@
                                     <option value="{{ $item->id }}" selected>{{ $item->nama_kelas }}</option>
                                     @else
                                         <option value="{{ $item->id }}">{{ $item->nama_kelas }}</option>
-                                    @endif 
+                                    @endif
                                 @endforeach
                             </select>
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Nama</label>
-                            <input type="text" name="nama" class="form-control" value={{ $siswa->nama }}>
+                            <input type="text" name="nama" class="form-control" value="{{ $siswa->nama }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
                         <div class="mb-4 col">
                             <label class="mb-2">Email</label>
-                            <input type="text" name="email" class="form-control" value={{ $siswa->email }}>
+                            <input type="text" name="email" class="form-control" value="{{ $siswa->email }}">
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Password</label>
-                            <input type="text" name="pass" class="form-control" value={{ $siswa->pass }}>
+                            <input type="text" name="pass" class="form-control" value="{{ $siswa->pass }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
                         <div class="mb-4 col">
                             <label class="mb-2">No Absen</label>
-                            <input type="text" name="no_absen" class="form-control" value={{ $siswa->no_absen }}>
+                            <input type="text" name="no_absen" class="form-control" value="{{ $siswa->no_absen }}">
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Alamat</label>
-                            <input type="text" name="alamat" class="form-control" value={{ $siswa->alamat }}>
+                            <input type="text" name="alamat" class="form-control" value="{{ $siswa->alamat }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
                         <div class="mb-4 col">
                             <label class="mb-2">Telepon</label>
-                            <input type="text" name="tlpn" class="form-control" value={{ $siswa->tlpn }}>
+                            <input type="text" name="tlpn" class="form-control" value="{{ $siswa->tlpn }}">
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">NIS</label>
-                            <input type="text" name="nis" class="form-control" value={{ $siswa->nis }}>
+                            <input type="text" name="nis" class="form-control" value="{{ $siswa->nis }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
@@ -101,23 +101,23 @@
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Tempat Lahir</label>
-                            <input type="text" name="tempat_lahir" class="form-control" value={{ $siswa->tempat_lahir }}>
+                            <input type="text" name="tempat_lahir" class="form-control" value="{{ $siswa->tempat_lahir }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
                         <div class="mb-4 col">
                             <label class="mb-2">Tanggal Lahir</label>
-                            <input type="text" name="tgl_lahir" class="form-control" value={{ $siswa->tgl_lahir }}>
+                            <input type="text" name="tgl_lahir" class="form-control" value="{{ $siswa->tgl_lahir }}">
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Agama</label>
-                            <input type="text" name="agama" class="form-control" value={{ $siswa->agama }}>
+                            <input type="text" name="agama" class="form-control" value="{{ $siswa->agama }}">
                         </div>
                     </div>
                     <div class="d-flex gap-4">
                         <div class="mb-4 col">
                             <label class="mb-2">Semester</label>
-                            <input type="text" name="semester" class="form-control" value={{ $siswa->semester }}>
+                            <input type="text" name="semester" class="form-control" value="{{ $siswa->semester }}">
                         </div>
                         <div class="mb-4 col">
                             <label class="mb-2">Status</label>
@@ -132,7 +132,7 @@
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-success">Simpan</button>
+                    <button class="btn btn-success" style="background-color:#F24E1A ;border:none">Simpan</button>
                 </form>
             </div>
         </div>

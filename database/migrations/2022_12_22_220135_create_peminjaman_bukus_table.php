@@ -18,11 +18,12 @@ return new class extends Migration
             $table->foreignId('siswa_id');
             $table->foreignId('buku_id');
             $table->date('tgl_pinjam');
-            $table->time('wkt_pinjam');
             $table->date('tgl_kembali');
-            $table->time('wkt_kembali');
             $table->integer('jumlah');
-            $table->softDeletes();
+            $table->string('status');
+            $table->integer('telat')->default(0);
+            $table->integer('sanksi')->default(0);
+            $table->date('pengembalian');
             $table->timestamps();
         });
     }

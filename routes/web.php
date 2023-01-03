@@ -15,6 +15,10 @@ use App\Http\Controllers\PenilaianController;
 use App\Http\Controllers\OSISController;
 use App\Http\Controllers\EkskulController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\PeminjamanBukuController;
+use App\Http\Controllers\PerpustakaanController;
+use App\Http\Controllers\SumbangBukuController;
+use App\Http\Controllers\BukuController;
 
 // Siswa
 Route::get('Paskibra', function () {
@@ -29,9 +33,13 @@ Route::get('KartuDigital', function () {
     return view('Profile/KartuDigital');
 })->name('Profile/KartuDigital');
 
-Route::get('Stand', function () {
-    return view('Kantin/Stand');
-})->name('Kantin/Stand');
+
+Route::get('Stand', [App\Http\Controllers\Admin\CrudStandController::class, 'daftarStand'])->name('Kantin/Stand');
+Route::get('Menu/{id}', [App\Http\Controllers\Pkantin\CrudMenuController::class, 'lihatMenu'])->name('Kantin/Menu');
+Route::get('Topup', [App\Http\Controllers\TopUpController::class, 'topup'])->name('Topup');
+Route::post('Topup/{role}', [App\Http\Controllers\TopUpController::class, 'store'])->name('Topup.store');
+Route::get('Tarik-saldo', [App\Http\Controllers\TopUpController::class, 'tarik'])->name('Tarik-saldo');
+Route::post('Tarik-saldo/{role}', [App\Http\Controllers\TopUpController::class, 'storeTarik'])->name('Tarik-saldo.store');
 
 Route::get('DaftarFasilitas', function () {
     return view('Fasilitas/DaftarFasilitas');
@@ -72,13 +80,38 @@ Route::group([
     Route::resource('crud-siswa', App\Http\Controllers\Admin\CrudSiswaController::class);
     Route::resource('crud-jadwal', App\Http\Controllers\Admin\CrudJadwalController::class);
     Route::resource('crud-wali', App\Http\Controllers\Admin\CrudWaliSiswaController::class);
+    Route::resource('crud-stand', App\Http\Controllers\Admin\CrudStandController::class);
+    Route::resource('crud-pegawai', App\Http\Controllers\Admin\CrudPegawaiController::class);
+    Route::resource('crud-pegawaikantin', App\Http\Controllers\Admin\CrudPegawaiKantinController::class);
+    // Route::resource('crud-menu', App\Http\Controllers\Pkantin\CrudMenuController::class);
 });
+
 // dashboard::gurus
 Route::group([
     'as' => 'guru.dashboard.',
     'prefix' => 'guru',
 ], function () {
     Route::resource('crud-nilai', App\Http\Controllers\Guru\CrudNilaiController::class);
+    Route::resource('pesanan', App\Http\Controllers\Guru\CrudPesananController::class);
+});
+// dashboard::pkantins
+Route::group([
+    'as' => 'pkantin.dashboard.',
+    'prefix' => 'pkantin',
+], function () {
+    Route::resource('crud-menu', App\Http\Controllers\Pkantin\CrudMenuController::class);
+    Route::get('ambilsaldo', [App\Http\Controllers\Pkantin\CrudMenuController::class, 'ambilsaldo'])->name('ambilsaldo');
+    // Route::get('tariksaldo', [App\Http\Controllers\Pkantin\CrudMenuController::class, 'tariksaldo'])->name('tariksaldo');
+    Route::resource('pesanan-masuk', App\Http\Controllers\Pkantin\PesananMasukController::class);
+});
+
+// dashboard::pegawai
+Route::group([
+    'as' => 'pegawai.dashboard.',
+    'prefix' => 'pegawai',
+], function () {
+    Route::get('topup', [App\Http\Controllers\Pegawai\TopupController::class, 'index'])->name('topup');
+    Route::get('topup/{id}', [App\Http\Controllers\Pegawai\TopupController::class, 'detail'])->name('topup.detail');
 });
 
 
@@ -196,9 +229,58 @@ Route::get('Dispen_lihatjadwalguru2', function () {
     return view('Jadwal/Dispen_lihatjadwalguru2');
 })->name('Jadwal/Dispen_lihatjadwalguru2');
 
-Route::get('Menu', function () {
-    return view('Kantin/Menu');
-})->name('Kantin/Menu');
+
+
+//Route Perpustakaan
+Route::get('Perpustakaan', [PerpustakaanController::class, 'index'])->name('Perpustakaan/Perpustakaan');
+Route::resource('Perpustakaan/pinjam', PerpustakaanController::class);
+Route::post('storePinjam', [PeminjamanBukuController::class, 'store']);
+Route::post('pengembalianBuku', [PerpustakaanController::class, 'pengembalianBuku']);
+Route::get('FormSumbangBuku', [SumbangBukuController::class, 'index'])->name('Perpustakaan/FormSumbangBuku');
+Route::post('storeSumbangBuku', [SumbangBukuController::class, 'store']);
+
+Route::get('FormPinjamBuku', function () {
+    return view('Perpustakaan/FormPinjamBuku');
+})->name('Perpustakaan/FormPinjamBuku');
+Route::get('KonfirmSumbang', [SumbangBukuController::class, 'indexKonfirmasiSumbangBuku'])->name('Perpustakaan/KonfirmSumbang');
+
+//route pegawai perpus
+Route::get('PegawaiPerpus', function () {
+    return view('PegawaiPerpus/PegawaiPerpus');
+})->name('PegawaiPerpus/PegawaiPerpus');
+
+Route::get('TambahBuku', function () {
+    return view('PegawaiPerpus/TambahBuku');
+})->name('PegawaiPerpus/TambahBuku');
+
+Route::get('CRUD-Perpus', [BukuController::class, 'index'])->name('PegawaiPerpus/CRUD-Perpus');
+
+Route::get('FormTambahBuku', function () {
+    return view('PegawaiPerpus/FormTambahBuku');
+})->name('PegawaiPerpus/FormTambahBuku');
+
+Route::post('storeBuku', [BukuController::class, 'store']);
+
+
+Route::get('FormUpdateBuku', function () {
+    return view('PegawaiPerpus/FormUpdateBuku');
+})->name('PegawaiPerpus/FormUpdateBuku');
+
+Route::get('SumbangBuku', [SumbangBukuController::class, 'indexPegawaiSumbangBuku'])->name('PegawaiPerpus/SumbangBuku');
+Route::post('setujuSumbang', [SumbangBukuController::class, 'setujuSumbang']);
+Route::post('tolakSumbang', [SumbangBukuController::class, 'tolakSumbang']);
+
+Route::get('PeminjamanBuku', [PeminjamanBukuController::class, 'indexPegawaiPerpus'])->name('PegawaiPerpus/PeminjamanBuku');
+Route::post('konfirmasiPinjam', [PeminjamanBukuController::class, 'konfirmasiPeminjaman']);
+Route::post('konfirmasiPengembalianBuku', [PeminjamanBukuController::class, 'pengembalianBuku']);
+
+Route::get('LihatKunjungan', function () {
+    return view('PegawaiPerpus/LihatKunjungan');
+})->name('PegawaiPerpus/LihatKunjungan');
+
+Route::get('TambahKunjungan', function () {
+    return view('PegawaiPerpus/TambahKunjungan');
+})->name('PegawaiPerpus/TambahKunjungan');
 
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 

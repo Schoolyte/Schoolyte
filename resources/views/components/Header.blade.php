@@ -23,6 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="menu">
           <li><a href={{ route('Dashboard') }} class="active">Dashboard</a></li>
+
           @auth('siswa')
             <li><a href="#"> Akademik </a>
                 <ul class="submenu">
@@ -30,75 +31,126 @@
                 <li><a href={{route('Absen/Absensiswa')}}>Absensi Kehadiran</a>
                     <hr>
                 <li><a href={{ route('Penilaian/Penilaiansiswa1')}}>Penilaian Pembelajaran</a> <hr class="break"></li>
-
-
                 <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor</a> <hr class="break"></li>
                 <li><a href={{ route('Mutasi/MutasiKeluar') }}>Mutasi</a> </li>
                 </ul>
             </li>
+            <li><a href="#">Peminjaman</a>
+                <ul class="submenu">
+                    <li><a href={{ route('Perpustakaan/Perpustakaan') }}>Perpustakaan</a>
+                        <hr class="break">
+                    </li>
+                    <li><a href="#">Fasilitas</a>
+                        <ul class="submenu2">
+                            <li><a href={{ route('Fasilitas/DaftarFasilitas') }}>Daftar Fasilitas</a>
+                                <hr class="break">
+                            </li>
+                            <li><a href={{ route('Fasilitas/Formpinjam') }}>Peminjaman Fasilitas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Kegiatan Sekolah</a>
+            <ul class="submenu">
+                <li><a href="{{ route('OSIS/OSIS')}}">OSIS</a> <hr class="break"></li>
+                <li><a href="{{ route('Ekstra/Ekskul')}}">Ekstrakulikuler</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Administrasi</a>
+            <ul class="submenu">
+            <li><a href="#">Keuangan</a><hr class="break"></li>
+            <li><a href="#">Pembayaran SPP</a><hr class="break"></li>
+            <li><a href="#">Pembayaran Buku</a><hr class="break"></li>
+            <li><a href="#">Pembayaran Seragam</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Pembelian</a>
+                <ul class="submenu">
+                <li><a href="#">Koperasi</a> <hr class="break"></li>
+                <li><a href={{ route('Kantin/Stand') }}>Kantin</a><hr class="break"></li>
+                <li><a href={{ route('Topup') }}>Top Up Saldo</a> <hr class="break"></li>
+                <li><a href={{ route('Tarik-saldo') }}>Tarik Saldo</a></li>
+                </ul>
+            </li>
           @endauth
+
           @auth('admin')
             <li>
                 <a href="#">Admin Menu</a>
                 <ul class="submenu">
                     <li><a href={{route('admin.dashboard.crud-guru.index')}}>Guru</a>  <hr class="break"></li>
                     <li><a href={{route('admin.dashboard.crud-kelas.index')}}>Kelas</a> <hr class="break"></li>
-                    <li><a href={{route('admin.dashboard.crud-mapel.index')}}>Mapel</a> <hr class="break"></li>
-                    <li><a href={{route('admin.dashboard.crud-jadwal.index')}}>Jadwal</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-mapel.index')}}>Mata Pelajaran</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-jadwal.index')}}>Jadwal Kelas</a> <hr class="break"></li>
                     <li><a href={{route('admin.dashboard.crud-siswa.index')}}>Siswa</a> <hr class="break"></li>
-                    <li><a href={{route('admin.dashboard.crud-wali.index')}}>Walisiswa</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-wali.index')}}>Wali Kelas</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-pegawai.index')}}>Pegawai</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-pegawaikantin.index')}}>Pegawai Kantin</a> <hr class="break"></li>
+                    <li><a href={{route('admin.dashboard.crud-stand.index')}}>Stand</a> <hr class="break"></li>
+                    <li><a href={{ route('pegawai.dashboard.topup') }}>Topup dan Tarik Saldo</a></li>
                 </ul>
             </li>
           @endauth
+
           @auth('guru')
             <li>
                 <a href="#">Guru Menu</a>
                 <ul class="submenu">
-                    <li><a href={{route('guru.dashboard.crud-nilai.index')}}>Input Nilai</a>  <hr class="break"></li>
+                    <li><a href={{route('guru.dashboard.crud-nilai.index')}}>Input Nilai</a> </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Pembelian</a>
+                <ul class="submenu">
+                    <li><a href="#">Koperasi</a> <hr class="break"></li>
+                    <li><a href={{ route('Kantin/Stand') }}>Kantin</a> <hr class="break"></li>
+                    <li><a href={{ route('Topup') }}>Top Up Saldo</a> <hr class="break"></li>
+                    <li><a href={{ route('Tarik-saldo') }}>Tarik Saldo</a></li>
                 </ul>
             </li>
           @endauth
           @auth('walisiswa')
             <li>
-                <a href="#">Walisiswa Menu</a>
+                <a href="#">Wali Kelas </a>
                 <ul class="submenu">
-                    <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor Siswa</a>  <hr class="break"></li>
+                    <li><a href={{ route('Rapor/RaporSiswa') }}>Rapor Siswa</a> </li>
                 </ul>
             </li>
           @endauth
-          <li><a href="#">Peminjaman</a>
+          @auth('pegawaiPerpus')
+          <li><a href="#">Perpustakaan</a>
               <ul class="submenu">
-                <li><a href="#">Perpustakaan</a> <hr class="break"></li>
-                <li><a href="#">Fasilitas</a>
-                    <ul class="submenu2">
-                      <li><a href={{ route('Fasilitas/DaftarFasilitas') }}>Daftar Fasilitas</a> <hr class="break"></li>
-                      <li><a href={{ route('Fasilitas/Formpinjam') }}>Peminjaman Fasilitas</a></li>
-                    </ul>
-                </li>
+                  <li><a href={{ route('PegawaiPerpus/PegawaiPerpus') }}>Perpustakaan</a>
+                      <hr class="break">
+                  </li>
               </ul>
+          </li>
+      @endauth
+          @auth('pegawaikantin')
+          <li>
+              <a href="#">Pegawai Kantin Menu</a>
+              <ul class="submenu">
+                  <li><a href={{ route('pkantin.dashboard.crud-menu.index') }}>Menu</a>  <hr class="break"></li>
+                  <li><a href={{ route('pkantin.dashboard.pesanan-masuk.index') }}>Pesanan Masuk</a>  <hr class="break"></li>
+                  <li><a href={{ route('pkantin.dashboard.ambilsaldo') }}>Ambil Saldo Stand</a>  <hr class="break"></li>
+                  <li><a href={{ route('Tarik-saldo') }}>Tarik Saldo</a> </li>
+              </ul>
+          </li>
+      @endauth
 
-          </li>
-          <li><a href="#">Kegiatan Sekolah</a>
-            <ul class="submenu">
-              <li><a href="{{ route('OSIS/OSIS')}}">OSIS</a> <hr class="break"></li>
-              <li><a href="{{ route('Ekstra/Ekskul')}}">Ekstrakulikuler</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Pembelian</a>
-              <ul class="submenu">
-                <li><a href="#">Koperasi</a> <hr class="break"></li>
-                <li><a href={{ route('Kantin/Stand') }}>Kantin</a></li>
-              </ul>
-          </li>
-          <li><a href="#">Administrasi</a>
-          <ul class="submenu">
-            <li><a href="#">Keuangan</a><hr class="break"></li>
-            <li><a href="#">Pembayaran SPP</a><hr class="break"></li>
-            <li><a href="#">Pembayaran Buku</a><hr class="break"></li>
-            <li><a href="#">Pembayaran Seragam</a></li>
-          </ul>
-          </li>
-          <li class="Notif"><a href="#">
+          @auth('pegawai')
+              <li>
+                  <a href="#">Pegawai Menu</a>
+                  <ul class="submenu">
+                    <li><a href={{ route('pegawai.dashboard.topup') }}>Topup dan Tarik Saldo</a> </li>
+                  </ul>
+              </li>
+          @endauth
+
+
+
+
+          <li class="Notif" ><a href="#">
           <img src={{ asset("assets/Notification.svg") }} alt="Notif" width="35" height="35"/>
           </a>
               <ul class="submenu">

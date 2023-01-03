@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Crud Wali | Schoolyte</title>
+    <title>Tambah Wali Kelas | Schoolyte</title>
     <link rel="stylesheet" href={{ asset("Style/Munculrapor.css") }}>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
@@ -29,11 +29,11 @@
             <h5 class="tittle1">Tambah Wali Kelas </h5>
             <ul class="breadcrumb">
                 <li><a href="#">Admin</a></li>
-                <li><a href="">Crud Wali Kelas</a></li>
+                <li><a href="">Wali Kelas</a></li>
                 <li><a href="">Tambah</a></li>
               </ul>
         </div>
-        <div class="section-card" style="top: 600px;">
+        <div class="section-card" style="top: 500px; left:250px">
             <div style="position: relative; width: 100%; padding: 3rem;">
                 <form action="{{ route('admin.dashboard.crud-wali.store') }}" method="POST" class="p-4">
                     @csrf
@@ -42,15 +42,15 @@
                         <input type="text" name="nama" class="form-control">
                     </div>
                     <div class="mb-4">
-                        <label class="mb-2">email</label>
+                        <label class="mb-2">Email</label>
                         <input type="text" name="email" class="form-control">
                     </div>
                     <div class="mb-4">
-                        <label class="mb-2">password</label>
+                        <label class="mb-2">Password</label>
                         <input type="text" name="password" class="form-control">
                     </div>
                     <div class="mb-4">
-                        <label class="mb-2">tlpn</label>
+                        <label class="mb-2">Nomor Telepon</label>
                         <input type="text" name="tlpn" class="form-control">
                     </div>
                     <div class="mb-4">
@@ -61,7 +61,7 @@
                             @endforeach
                         </select>
                     </div>
-                    <button class="btn btn-success">Simpan</button>
+                    <button class="btn btn-success" style="background-color:#F24E1A ;border:none">Simpan</button>
                 </form>
             </div>
         </div>

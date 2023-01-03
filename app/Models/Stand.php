@@ -15,7 +15,9 @@ class Stand extends Model
             'jenis_stand',
             'kode_stand',
             'barcode_stand',
-            'image'
+            'p_kantin_id',
+            'image',
+            'saldo'
 
     ];
     public function menus()

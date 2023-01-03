@@ -26,7 +26,7 @@
         <span>Anda dapat melakukan pembelian di Kantin dengan mudah</span>
       </div>
       <div class="saldo">
-        <img src="/assets/Wallet.png" alt=""><span>Rp 100.000</span>
+        <img src="/assets/Wallet.png" alt=""><span>Rp {{ $user->saldo }}</span>
       </div>
       <div class="navbartab">
         <div class="tab">
@@ -36,109 +36,68 @@
         </div>
 
         <div id="Tab1" class="tabcontent show active">
-            <div class="dapur1">
-                <a href={{route('Kantin/Menu')}}>
+            @foreach ($stands as $item)
+            <div class="dapur{{$loop->index + 1}}">
+                <a href={{ route('Kantin/Menu', [$item->id]) }}>
                 <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
+                <span class="text1">{{ $item->nama_stand }}</span>
+                <span class="text2">Kode : {{ $item->id }}</span>
+                <span class="text3">Jenis : {{ $item->jenis_stand}}</span>
                 </a>
             </div>
-            <div class="dapur2">
-                <a href={{route('Kantin/Menu')}}>
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
-            <div class="dapur3">
-                <a href="#">
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
-            <div class="dapur4">
-                <a href="#">
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
-            <div class="dapur5">
-                <a href="#">
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
-            <div class="dapur6">
-                <a href="#">
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
-            <div class="dapur7">
-                <a href="#">
-                <img src="/assets/image 3.png" alt="" class="img-dapur">
-                <span class="text1">Dapur Bu Dewi</span>
-                <span class="text2">kode : 01</span>
-                <span class="text3">Jenis : Makanan, Minuman</span>
-                </a>
-            </div>
+            @endforeach
         </div>
 
         <div id="Tab2" class="tabcontent">
-            <div class="pesanan1">
-                <span class="t1">No. Pesanan :</span>
-                <span class="t2">Waktu Pemesanan</span>
-                <div class="id">1234567890</div>
-                <div class="tanggal">Senin, 11 Januari 2023</div>
-                <img src="/assets/image 3.png" alt="" class="pesanan">
-                <div class="kode">Dapur Bu Dewi, Kode: 01</div>
-                <div class="minuman">1x Es Teh</div>
-                <div class="makanan">3x Nasi Goreng Spesial</div>
-                <div class="hg-minum">Rp. 3000</div>
-                <div class="hg-makan">Rp. 30.000</div>
-                <div class="total">Total Bayar : 33.000</div>
-                <a href="#"><button type="submit" class="btn-primary">Selesai</button></a>
-            </div>
-            <div class="pesanan2">
-                <span class="t1">No. Pesanan :</span>
-                <span class="t2">Waktu Pemesanan</span>
-                <div class="id">1234567890</div>
-                <div class="tanggal">Senin, 11 Januari 2023</div>
-                <img src="/assets/image 3.png" alt="" class="pesanan">
-                <div class="kode">Dapur Bu Dewi, Kode: 01</div>
-                <div class="minuman">1x Es Teh</div>
-                <div class="makanan">3x Nasi Goreng Spesial</div>
-                <div class="hg-minum">Rp. 3000</div>
-                <div class="hg-makan">Rp. 30.000</div>
-                <div class="total">Total Bayar : 33.000</div>
-                <a href="#"><button type="submit" class="btn-primary">Selesai</button></a>
-            </div>
+            @foreach ($pesanans as $item)
+            <div class="pesanan{{ $loop->index + 1 }}">
+                    <span class="t1">No. Pesanan :</span>
+                    <span class="t2">Waktu Pemesanan</span>
+                    <div class="id">{{ $item->id }}</div>
+                    <div class="tanggal">{{ \Carbon\Carbon::parse($item->created_at)->format('l, d F Y') }}</div>
+                    <img src="/assets/image 3.png" alt="" class="pesanan">
+                    <div class="kode">{{ $item->stand->nama_stand }}, Kode: {{ $item->stand->kode_stand }}</div>
+                    <div class="minuman" style="width: 76%;display: block">
+                        @foreach ($item->pesanan_menu as $menu)
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>{{ $menu->qty }}x {{ $menu->menu->nama_menu }}</div>
+                                <div>Rp {{ $menu->menu->harga }}</div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="total">Total Bayar : Rp {{ $item->total_harga }}</div>
+                    @if ($item->status == 'pending')
+                        <a>
+                            <button type="button" class="btn-primary" disabled style="background-color: #4b4b4b;">
+                            pending
+                            </button>
+                        </a>
+                    @elseif ($item->status == 'dikonfirmasi')
+                        <a href="{{ route('Kantin/Stand', ['action' => 'selesai', 'id' => $item->id]) }}"><button type="submit" class="btn-primary">Selesai</button></a>
+                    @endif
+                </div>
+            @endforeach
         </div>
         <div id="Tab3" class="tabcontent">
-        <div class="pesanan1">
-                <span class="t1">No. Pesanan :</span>
-                <span class="t2">Waktu Pemesanan</span>
-                <div class="id">1234567890</div>
-                <div class="tanggal">Senin, 11 Januari 2023</div>
-                <img src="/assets/image 3.png" alt="" class="pesanan">
-                <div class="kode">Dapur Bu Dewi, Kode: 01</div>
-                <div class="minuman">1x Es Teh</div>
-                <div class="makanan">3x Nasi Goreng Spesial</div>
-                <div class="hg-minum">Rp. 3000</div>
-                <div class="hg-makan">Rp. 30.000</div>
-                <div class="total">Total Bayar : 33.000</div>
-                <img src="/assets/Wallet.png" alt="" class="wallet"><span class="nominal">-Rp 33.000</span>
-            </div>
+            @foreach ($pesanans_selesai as $item)
+            <div class="pesanan{{ $loop->index + 1 }}">
+                    <span class="t1">No. Pesanan :</span>
+                    <span class="t2">Waktu Pemesanan</span>
+                    <div class="id">{{ $item->id }}</div>
+                    <div class="tanggal">{{ \Carbon\Carbon::parse($item->created_at)->format('l, d F Y') }}</div>
+                    <img src="/assets/image 3.png" alt="" class="pesanan">
+                    <div class="kode">{{ $item->stand->nama_stand }}, Kode: {{ $item->stand->kode_stand }}</div>
+                    <div class="minuman" style="width: 76%;display: block">
+                        @foreach ($item->pesanan_menu as $menu)
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>{{ $menu->qty }}x {{ $menu->menu->nama_menu }}</div>
+                                <div>Rp {{ $menu->menu->harga }}</div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="total">Total Bayar : Rp {{ $item->total_harga }}</div>
+                </div>
+            @endforeach
         </div>
       </div>
     </div>

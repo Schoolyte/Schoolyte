@@ -52,6 +52,18 @@ return [
             'driver' => 'session',
             'provider' => 'walisiswas',
         ],
+        'pegawai' => [
+            'driver' => 'session',
+            'provider' => 'pegawais',
+        ],
+        'pegawaikantin' => [
+            'driver' => 'session',
+            'provider' => 'pegawaikantins',
+        ],
+        'pegawaiPerpus' => [
+            'driver' => 'session',
+            'provider' => 'pegawaiPerpuss',
+        ],
     ],
 
     /*
@@ -88,7 +100,18 @@ return [
             'driver' => 'eloquent',
             'model' => App\Models\WaliSiswa::class,
         ],
-
+        'pegawais' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Pegawai::class,
+        ],
+        'pegawaikantins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\PegawaiKantin::class,
+        ],
+        'pegawaiPerpuss' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\PegawaiPerpustakaan::class,
+        ],
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
@@ -131,6 +154,24 @@ return [
         ],
         'walisiswas' => [
             'provider' => 'walisiswas',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'pegawais' => [
+            'provider' => 'pegawais',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'pegawaikantins' => [
+            'provider' => 'pegawaikantins',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
+        ],
+        'pegawaiPerpuss' => [
+            'provider' => 'pegawaiPerpuss',
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,

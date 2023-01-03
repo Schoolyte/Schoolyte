@@ -26,7 +26,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@example.com',
             'pass' => 'password',
             'alamat' => 'Jl. Admin',
-            'tlpn_siswa' => '0895337123123',
+            'tlpn' => '0895337123123',
+            'nik' => '12312312312312312',
             'jenis_kelamin' => 'L',
             'tempat_lahir' => 'Jakarta',
             'tgl_lahir' => '1999-12-12',
@@ -54,7 +55,7 @@ class DatabaseSeeder extends Seeder
 
         \App\Models\Kelas::create([
             'nama_kelas' => 'XII RPL 1',
-            'guru_id' => 1,
+            'guru_id' => 8,
         ]);
 
         \App\Models\Siswa::create([
@@ -77,13 +78,7 @@ class DatabaseSeeder extends Seeder
             'image' => ""
         ]);
 
-        \App\Models\WaliSiswa::create([
-            'siswa_id' => 1,
-            'nama' => 'Wali Siswa 1',
-            'email' => 'walisiswa@example.com',
-            'pass' => 'password',
-            'tlpn' => 123123123,
-        ]);
+
 
 
         // mapel
@@ -119,6 +114,76 @@ class DatabaseSeeder extends Seeder
             'guru_id' => 1,
             'hari' => 'selasa',
             'jam' => '07:00',
+        ]);
+        \App\Models\Stand::create([
+            'nama_stand' => 'Pecel Mantap',
+            'jenis_stand' => 'Makanan',
+            'kode_stand' => 0,
+            'barcode_stand' => 'abc',
+            'p_kantin_id' => 1,
+            'image' => 'pecel.jpg',
+        ]);
+        \App\Models\Stand::create([
+            'nama_stand' => 'Nasi Gokil',
+            'jenis_stand' => 'Makanan dan Minuman',
+            'kode_stand' => 0,
+            'barcode_stand' => 'abc',
+            'p_kantin_id' => 2,
+            'image' => 'pecel.jpg',
+        ]);
+        \App\Models\Menu::create([
+            'stand_id' => 1,
+            'nama_menu' => 'Pecel Menggokil',
+            'harga' => 10000,
+            'image' => 'pecel.jpg',
+        ]);
+        \App\Models\Menu::create([
+            'stand_id' => 1,
+            'nama_menu' => 'Pecel tidak gokil',
+            'harga' => 80000,
+            'image' => 'pecel.jpg',
+        ]);
+
+        // pegawai
+        \App\Models\Pegawai::create([
+            'email' => 'pegawai@example.com',
+            'pass' => 'password',
+            'nama' => 'Pegawai 1',
+            'alamat' => 'Jl. pegawai',
+            'tlpn' => 123123123,
+            'jenis_kelamin' => 'L',
+            'tempat_lahir' => 'Jakarta',
+            'tgl_lahir' => '2000-01-01',
+            'agama' => 'Islam',
+            'saldo' => 0,
+            'status' => 'aktif',
+            'image' => ""
+        ]);
+
+        // katin
+        \App\Models\PegawaiKantin::create([
+            'email' => 'pegawaikantin@example.com',
+            'pass' => 'password',
+            'nama' => 'Pegawai Kantin 1',
+            'alamat' => 'Jl. pegawaikantin',
+            'tlpn' => 123123123,
+            'jenis_kelamin' => 'L',
+            'tempat_lahir' => 'Jakarta',
+            'tgl_lahir' => '2000-01-01',
+            'agama' => 'Islam',
+            'saldo' => 0,
+            'status' => 'aktif',
+            'image' => ""
+        ]);
+
+
+        // saldo
+        \App\Models\Topup::create([
+            'user_id' => 1,
+            'role' => 'siswa',
+            'status' => 'belum konfirmasi',
+            'amount' => 10000,
+            'type' => 'topup',
         ]);
     }
 }
